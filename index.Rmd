@@ -1,0 +1,211 @@
+---
+title: "Fighting noise with dimensionality"
+# subtitle: ""
+author: "inSileco"
+date: "2018/02/16"
+output:
+  xaringan::moon_reader:
+    includes:
+      in_header: inSileco-header.html
+    lib_dir: assets
+    seal: false
+    css: ["default", "inSileco.css", "inSileco-fonts.css"]
+    nature:
+      beforeInit: "inSileco-macros.js"
+      #autoplay: 30000
+      #countdown: 60000
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(
+  comment = "#>",
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 8,
+  fig.height = 6,
+  fig.align = 'center',
+  width = 120
+)
+mypar <- list(fg = "#303940", bg = "transparent", las = 1)
+```
+
+
+
+## <i class="fa fa-angle-double-right" aria-hidden="true"></i> Fighting noise with dimensionality
+
+##### The more spatial biotracers the better!
+
+<br><br>
+
+#### Kevin Cazelles &nbsp;&nbsp;&nbsp; .small[University of Guelph]
+
+###### Emelia Myles-Gonzalez, Tyler Zemlak, Kevin McCann
+
+<br>
+
+.column[
+
+<br>
+
+###### CSEE 2018 - July 11th, 2018
+
+###### ![:faic](github) [KevCaz/fightingNoise](https://github.com/inSileco/KevCaz/fightingNoise)
+
+]
+
+.column[
+.right[![:scale 18%](img/BiRN_logo.png)]
+.right[![:scale 14%](img/inSilecoLogo.png)]
+]
+
+
+
+
+
+
+
+
+
+---
+class: inverse, center, middle
+
+# Before I start
+
+## facts that are worth mentionning,
+
+
+---
+
+<br><br>
+
+### 1. I won't talk about any trophic interaction
+
+### 2. Fish? humm, kind of.
+
+### 3. Genreal ideas about inference
+
+### 4. Still looking in apropirate litterature?
+
+
+
+
+
+
+---
+class: inverse, center, middle
+
+# Context
+
+## The push for provenance
+
+
+---
+# Where does it come from?
+
+
+<!-- 3 slides fish palm oil globalization  -->
+
+
+---
+class: inverse, center, middle
+
+# Biotracers as sptaial indicator
+
+## yes
+
+
+
+---
+# Biotracers
+
+
+---
+# Staial distribution
+
+
+---
+class: inverse, center, middle
+
+# Theory
+
+
+---
+class: inverse, center, middle
+
+# Does it work
+
+
+
+
+
+
+
+---
+
+# Headers (level 1)
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
+
+
+---
+
+# Modifying text
+
+
+.column[
+
+#### Classes
+
+normal size ( $\LaTeX$-friendly terms)
+
+`.huge[huge]` &nbsp; .huge[huge]
+
+`.large[large]` &nbsp; .large[large]
+
+`.small[small]` &nbsp; .small[small]
+
+`.tiny[tiny]` &nbsp; .small[tiny]
+
+]
+
+
+.column[
+
+#### Special class
+
+- `.alert[alert]` .alert[alert]
+
+- `.comment[comment]` .comment[comment]
+
+#### Use remarkjs's macros
+
+- `![:scale 40%](path/to/img.png)` to scale an image
+
+- `![:faic](github)` &nbsp; ![:faic](github)
+
+- `![:acic](github)` &nbsp; ![:acic](orcid)
+
+
+]
+
+
+
+---
+class: inverse, center, middle
+
+# The end
+
+## Thanls
+
+
+---
+# $$ 

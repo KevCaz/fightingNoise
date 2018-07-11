@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fighting noise with dimensionality</title>
+    <meta charset="utf-8">
+    <meta name="author" content="inSileco" />
+    <link href="assets/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/academicons-1.8.1/css/academicons.min.css">
+    <link rel="stylesheet" href="inSileco.css" type="text/css" />
+    <link rel="stylesheet" href="inSileco-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+## &lt;i class="fa fa-angle-double-right" aria-hidden="true"&gt;&lt;/i&gt; Fighting noise with dimensionality
+
+##### The more spatial biotracers the better!
+
+&lt;br&gt;&lt;br&gt;
+
+#### Kevin Cazelles &amp;nbsp;&amp;nbsp;&amp;nbsp; .small[University of Guelph]
+
+###### Emelia Myles-Gonzalez, Tyler Zemlak, Kevin McCann
+
+&lt;br&gt;
+
+.column[
+
+&lt;br&gt;
+
+###### CSEE 2018 - July 11th, 2018
+
+###### ![:faic](github) [KevCaz/fightingNoise](https://github.com/inSileco/KevCaz/fightingNoise)
+
+]
+
+.column[
+.right[![:scale 18%](img/BiRN_logo.png)]
+.right[![:scale 14%](img/inSilecoLogo.png)]
+]
+
+
+
+
+
+
+
+
+
+---
+class: inverse, center, middle
+
+# Before I start
+
+## facts that are worth mentionning,
+
+
+---
+
+&lt;br&gt;&lt;br&gt;
+
+### 1. I won't talk about any trophic interaction
+
+### 2. Fish? humm, kind of.
+
+### 3. Genreal ideas about inference
+
+### 4. Still looking in apropirate litterature?
+
+
+
+
+
+
+---
+class: inverse, center, middle
+
+# Context
+
+## The push for provenance
+
+
+---
+# Where does it come from?
+
+
+&lt;!-- 3 slides fish palm oil globalization  --&gt;
+
+
+---
+class: inverse, center, middle
+
+# Biotracers as sptaial indicator
+
+## yes
+
+
+
+---
+# Biotracers
+
+
+---
+# Staial distribution
+
+
+---
+class: inverse, center, middle
+
+# Theory
+
+
+---
+class: inverse, center, middle
+
+# Does it work
+
+
+
+
+
+
+
+---
+
+# Headers (level 1)
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
+
+
+---
+
+# Modifying text
+
+
+.column[
+
+#### Classes
+
+normal size ( `\(\LaTeX\)`-friendly terms)
+
+`.huge[huge]` &amp;nbsp; .huge[huge]
+
+`.large[large]` &amp;nbsp; .large[large]
+
+`.small[small]` &amp;nbsp; .small[small]
+
+`.tiny[tiny]` &amp;nbsp; .small[tiny]
+
+]
+
+
+.column[
+
+#### Special class
+
+- `.alert[alert]` .alert[alert]
+
+- `.comment[comment]` .comment[comment]
+
+#### Use remarkjs's macros
+
+- `![:scale 40%](path/to/img.png)` to scale an image
+
+- `![:faic](github)` &amp;nbsp; ![:faic](github)
+
+- `![:acic](github)` &amp;nbsp; ![:acic](orcid)
+
+
+]
+
+
+
+---
+class: inverse, center, middle
+
+# The end
+
+## Thanls
+
+
+---
+# $$
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="inSileco-macros.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
