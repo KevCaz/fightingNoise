@@ -17,6 +17,8 @@ output:
 ---
 
 ```{r setup, echo = F}
+library(graphicsutils)
+source("rscripts/figDens.R")
 knitr::opts_chunk$set(
   comment = "#>",
   collapse = TRUE,
@@ -27,7 +29,11 @@ knitr::opts_chunk$set(
   fig.align = 'center',
   width = 120
 )
-mypar <- list(fg = "#303940", bg = "transparent", las = 1)
+mypar <- list(fg = "#303940", bg = "transparent", mar = c(5, 2, 0, 2))
+pal <- gpuPalette("insileco")
+col2 <- "#3fb3b2"
+col1 <- "#375771"
+seqx <- seq(-10, 10, .05)
 ```
 
 
@@ -101,6 +107,9 @@ class: inverse, center, middle
 
 ## The push for provenance
 
+<!-- Country-of-Origin Labeling (COOL) -->
+
+truthful product informatio
 
 ---
 # The push for provenance
@@ -130,8 +139,21 @@ class: inverse, center, middle
 ## King
 
 https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing
+https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab
 
+---
+## Questions
 
+### Where this crab is from?
+
+#### The
+
+http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from
+
+#### Caught illegally?
+
+### Where does the
+Where
 
 ---
 # Questions
@@ -139,7 +161,7 @@ https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-cr
 ---
 class: inverse, center, middle
 
-# Question
+# Questions
 
 ## The push for provenance
 
@@ -152,7 +174,54 @@ class: inverse, center, middle
 
 # Theory
 
-## A few idea about inference
+## a Bayesian framework
+
+---
+# Basic ideas
+
+```{R fig0, echo = F}
+par(mypar, mfrow = c(2,1), mar = c(3, 4, 0, 1))
+figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(8), xlab = "Biotracer 1", lwd = 3)
+figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(8), xlab = "Biotracer 2", lwd = 3)
+```
+
+
+---
+# Basic ideas - dissimilarity
+
+```{R fig1, echo = F}
+par(mypar)
+figDens(seqx, .1*c(-1, 1), pal = c(col1, col2), lwd = 3)
+```
+
+---
+# Basic ideas - dissimilarity
+
+```{R fig2, echo = F}
+par(mypar)
+figDens(seqx, 1*c(-1, 1), pal = c(col1, col2), lwd = 3)
+```
+
+---
+# Basic ideas - dissimilarity
+
+```{R fig3, echo = F}
+par(mypar)
+figDens(seqx, .15*c(-1, .1), sds = c(1, 2), pal = c(col1, col2), lwd = 3)
+```
+
+---
+# Basic ideas - more dimensions
+
+
+---
+# Basic ideas
+
+```
+seqx <- seq(-10, 10, .1)
+plot0(c(-10, 10), c(0, 2))
+```
+
 
 
 ---
