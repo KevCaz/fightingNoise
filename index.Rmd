@@ -241,6 +241,35 @@ figTwoDims(col1, col2)
 
 
 ---
+# Results - dissimilarity
+
+<br>
+
+.center[![:scale 90%](img/fig_theo1.png)]
+
+---
+# Results - dimensionality
+
+<br>
+
+.center[![:scale 70%](img/fig_theo2.png)]
+
+---
+# Results - dimensionality
+
+<br>
+
+.center[![:scale 70%](img/fig_theo3.png)]
+
+---
+# Results - spatial correlation
+
+<br>
+
+![:scale 90%](img/fig_theo4.png)
+
+
+---
 # Results
 
 ### The more the biotracers the better!
@@ -248,16 +277,8 @@ figTwoDims(col1, col2)
 The curse of dimensionality in
 becomes the blessing of dimensionality.
 
----
-# Buiilding distribution
-
-- major issue
-- joint distrbution
-- add Noise
 
 
----
-# Spaial distribution
 
 
 
@@ -265,9 +286,33 @@ becomes the blessing of dimensionality.
 ---
 class: inverse, center, middle
 
-# Does it work
+# Applying the framework
+
+## The King crab example
 
 
+---
+# King Crab - data
+
+![](img/mapKC.png)
+
+
+---
+# King Crab - assumptions
+
+![](img/mapKC.png)
+
+- No temporal variation
+
+- Known relatioship between isoscape and tissue ratio
+
+- No mixture
+
+
+---
+# King Crab - results
+
+![:scale 40%](img/figKC2.png)
 
 
 ---

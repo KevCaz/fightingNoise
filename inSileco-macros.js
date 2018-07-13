@@ -4,6 +4,12 @@ remark.macros.scale = function (percentage) {
   return '<img src="' + url + '" style="width: ' + percentage + '" />';
 };
 
+remark.macros.scalec = function (percentage) {
+  var url = this;
+  return '.center[<img src="' + url + '" style="textwidth: ' + percentage + '" />]';
+};
+
+
 // Font-awesome icons (versio 4.7)
 remark.macros.faic = function (size = 2) {
   var name = this;
