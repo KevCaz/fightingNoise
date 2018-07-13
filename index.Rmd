@@ -338,7 +338,3 @@ class: inverse, center, middle
 
 ---
 # Thanks
-
-##
-
-##
