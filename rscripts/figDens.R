@@ -7,8 +7,31 @@ figDens <- function(seqx, means, sds = rep(1, length(means)), pal = 1:length(mea
   mtext(2, text = ylab, cex = 1.48)
 }
 
-##Figure one Dime
+##Figure twoDims
+figTwoDims <- function(col1, col2) {
 
+  plot0(c(-5, 5), c(-5, 5))
+  dfO1 <- data.frame(
+    x = rnorm(30, -1, 1),
+    y = rnorm(30, 0, 2)
+  )
+  dfO2 <- data.frame(
+    x = rnorm(30, 0, .2),
+    y = rnorm(30, 0, 2)
+  )
+  ########
+  points(dfO1$x, dfO1$y, col = col2, pch = 19, cex = 1.5)
+  points(dfO2$x, dfO2$y, col = col1, pch = 19, cex = 1.2)
+  #######
+  box2(1:2)
+  mtext(1, text = "Biotracer 1", line = 1.2, cex = 1.4)
+  mtext(2, text = "Biotracer 2", line = 1.2, cex = 1.4)
+}
+
+
+
+
+##---Figure one Dim
 figOneDim <- function(col1, col2) {
 
   plot0(c(-5,5), c(-1, 1))

@@ -39,7 +39,7 @@ seqx <- seq(-10, 10, .05)
 
 <img src = "img/logoUoG.png" style = "position:absolute; width:180px; height:100px; top:240px; right:15px;"></img>
 
-## <i class="fa fa-angle-double-right" aria-hidden="true"></i> Fighting noise with dimensionality
+## ![:faic](angle-double-right) Fighting noise with dimensionality
 
 ##### The more biotracers the better!
 
@@ -231,32 +231,22 @@ figOneDim(col1, col2)
 ---
 # Basic ideas - more dimensions
 
-```{R fig5, echo = F}
+```{R fig5, echo = F, fig.height = 4.8}
 par(mypar)
-figOneDim(col1, col2)
+par(mar = c(3, 3, 2, 2))
+figTwoDims(col1, col2)
 ```
 
+##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
 
 
 ---
-# Basic ideas
+# Results
 
-```
-seqx <- seq(-10, 10, .1)
-plot0(c(-10, 10), c(0, 2))
-```
+### The more the biotracers the better!
 
-
-
----
-# Extenting to any distribution
-
-The curse of distribution which is actually the strength of achine leraning!
-
-
----
-# Biotracers as spatial distribution
-
+The curse of dimensionality in
+becomes the blessing of dimensionality.
 
 ---
 # Buiilding distribution
@@ -293,22 +283,6 @@ Spatial fingerprint
 extenten to sptail temporal finger print
 
 
-
-
-
----
-
-# Headers (level 1)
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
 
 
 ---
