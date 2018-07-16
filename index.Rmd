@@ -61,8 +61,8 @@ seqx <- seq(-10, 10, .05)
 ]
 
 .column2[
-.right[![:scale 18%](img/BiRN_logo.png)]
-.right[![:scale 14%](img/inSilecoLogo.png)]
+ &nbsp;
+.right[ [![:scale 16%](img/inSilecoLogo.png)](https://insileco.github.io/) ]
 ]
 
 
@@ -444,6 +444,27 @@ $$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$
 
 <br>
 
+#### $$\text{Biotracers} \sim \mathcal{N}(\mu, \Sigma)$$
+
+##### $\mu$: means - fixed
+
+##### $\Sigma$: covariance matrix
+
+$$\Sigma_{i, j} = cov(X_i, X_j)$$
+
+- diagonal (variances) fixed
+
+- off-diagonal terms vary
+
+See [Multivariate normal distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution)
+
+
+---
+# Results - dimensionality (dim = 2)
+
+<br>
+
+
 .center[![:scale 70%](img/fig_theo2.png)]
 
 ---
@@ -462,7 +483,7 @@ $$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$
 
 #### 1. the more dissimilar the better
 
-#### 2. Any extra biotracer likely brings something new
+#### 2. any extra biotracer likely brings something new
 
 #### 3. the more the biotracers the better!
 
@@ -521,6 +542,15 @@ class: inverse, center, middle
 
 
 
+
+
+
+
+
+
+
+
+
 ---
 class: inverse, center, middle
 
@@ -534,20 +564,38 @@ class: inverse, center, middle
 
 ### 1- Quantify robustness
 
+--
+
 ### 2- Temporal variations
+
+--
 
 ### 3- More dimensions (currenlty 3)
 
-### Do not waste data
+--
+
+###4-  Do not waste data
+
+
+---
+# Thanks to
+
+### - my coauthors and [the McCannLab](https://www.mccannlab.org/)
+
+--
+
+### - [Food From Though](https://arrellfoodinstitute.ca/food-from-thought/)
+
+![:scalec 34%](img/CanadaFirst.png)
+
+--
+
+### -[Biodiversity Resilience Network](http://birn.editmy.website/)
+
+![:scalec 26%](img/BiRN_logo.png)
 
 
 ---
 class: inverse, center, middle
 
 # THE END
-
-## Thanks
-
-
----
-# Thanks
