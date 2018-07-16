@@ -315,7 +315,11 @@ figTwoDims(col1, col2)
 
 - $S_{n}$ Sample of size $n$
 
-- $[O_i|S_{n}]$: Probability the sample is from $O_i$ given the sample.
+- $[O_i|S_{n}]$: Probability the sample is from $O_i$ given the sample - .alert[unknown]
+
+- $[S_{n}|Oi]$: Likelihood - .alert[known distributions (1, 2, ... dimensions)]
+
+--
 
 - .alert[Assumptions]:
 
@@ -328,11 +332,65 @@ $$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$
 
 
 ---
-# Results - dissimilarity
+# What does the theory say?
 
 <br>
 
-.center[![:scale 90%](img/fig_theo1.png)]
+- Multinormal
+- Increasing sample size
+- Sample if from 1
+
+
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigMu1.png)]
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigMu2.png)]
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigMu3.png)]
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigMu4.png)]
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigMu5.png)]
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigMu6.png)]
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigMu7.png)]
+
+
+
 
 ---
 # Results - dimensionality
