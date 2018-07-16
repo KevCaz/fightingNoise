@@ -391,6 +391,53 @@ $$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$
 
 
 
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigSd1.png)]
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigSd2.png)]
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigSd3.png)]
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigSd4.png)]
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigSd5.png)]
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigSd6.png)]
+
+
+---
+# Results - dissimilarity
+<br>
+
+.center[![:scale 92%](img/FigSd7.png)]
+
+
 
 ---
 # Results - dimensionality
@@ -411,10 +458,19 @@ $$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$
 ---
 # Results
 
-### The more the biotracers the better!
+<br>
 
-The curse of dimensionality in
-becomes the blessing of dimensionality.
+#### 1. the more dissimilar the better
+
+#### 2. Any extra biotracer likely brings something new
+
+#### 3. the more the biotracers the better!
+
+<br>
+
+--
+
+##### ![:faic](angle-double-right) The curse of dimensionality becomes the blessing of dimensionality.
 
 
 
@@ -468,66 +524,21 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-# Applying the framework
-
-## Salmon example
-
-
----
-# Results
-
-![](img/resSalmon.png)
-
-
-
----
-class: inverse, center, middle
-
 # Perspectives
 
 
-
 ---
+# Perspectives
 
-# Modifying text
+<br>
 
+### 1- Quantify robustness
 
-.column[
+### 2- Temporal variations
 
-#### Classes
+### 3- More dimensions (currenlty 3)
 
-normal size ( $\LaTeX$-friendly terms)
-
-`.huge[huge]` &nbsp; .huge[huge]
-
-`.large[large]` &nbsp; .large[large]
-
-`.small[small]` &nbsp; .small[small]
-
-`.tiny[tiny]` &nbsp; .small[tiny]
-
-]
-
-
-.column[
-
-#### Special class
-
-- `.alert[alert]` .alert[alert]
-
-- `.comment[comment]` .comment[comment]
-
-#### Use remarkjs's macros
-
-- `![:scale 40%](path/to/img.png)` to scale an image
-
-- `![:faic](github)` &nbsp; ![:faic](github)
-
-- `![:acic](github)` &nbsp; ![:acic](orcid)
-
-
-]
-
+### Do not waste data
 
 
 ---
