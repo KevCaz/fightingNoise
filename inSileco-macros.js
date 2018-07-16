@@ -6,7 +6,7 @@ remark.macros.scale = function (percentage) {
 
 remark.macros.scalec = function (percentage) {
   var url = this;
-  return '.center[<img src="' + url + '" style="textwidth: ' + percentage + '" />]';
+  return '.center[<img src="' + url + '" style="width: ' + percentage + '" />]';
 };
 
 

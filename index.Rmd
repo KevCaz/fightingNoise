@@ -29,7 +29,7 @@ knitr::opts_chunk$set(
   fig.align = 'center',
   width = 120
 )
-mypar <- list(fg = "#303940", bg = "transparent", mar = c(5, 2, 0, 2))
+mypar <- list(fg = "#303940", bg = "transparent", mar = c(2, 2, 0, 2))
 pal <- gpuPalette("insileco")
 col2 <- "#3fb3b2"
 col1 <- "#375771"
@@ -111,14 +111,18 @@ class: inverse, center, middle
 ---
 # The push for provenance
 
-- Mean distance; food miles increased
-- Zone where sustainable other not
-- Zone where fishing is legal other where it is not
-- Comsumer right-to-know
-- Truthful product information
+<br>
 
-<!-- any produc e.g. fish palm oil globalization  -->
-<!-- Country-of-Origin Labeling (COOL) -->
+> Consumers are become increasingly aware of, and interested in, the origins
+of their seafood, particularly as issues such as environmental sustainability,
+impacts on endangered species, toxin accumulations, incidents of illegal,
+unregulated and unreported (IUU) fishing, quality assurances and human
+rights abuses are better understood.
+
+Roebuck, K. 2017. [Canadians Eating in the Dark](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf).
+
+- How to determine where a species come from?
+
 
 ---
 # Biotracers
@@ -126,23 +130,40 @@ class: inverse, center, middle
 #### Anything that could be informative:
 
 - trace elements,
-- isotoped signature,
+- isotopes,
 - genetics data,
 - gut contents,
 - etc.
 
+#### tocreate a spatial fingerprint
 
-#### A "silver bullet" or a "shotgut shell"?
+---
+# A silver bullet?
 
-- Finding the best biotracers
-- Or using together and build spatial fringerprint
+<br>
+
+>  The future of food authentication and food quality assur-
+ance critically depends on combining chemometrics,
+computational analytical methods, and bioinformatics
+in processing and interpreting the data obtained through
+analytical technique.
+
+Danezis, G. P., A. S. Tsagkaris, V. Brusic, and C. A. Georgiou. 2016.
+[Food authentication: state of the art and prospects](https://www.sciencedirect.com/science/article/pii/S2214799316300844). Current Opinion in Food Science 10:22–31.
+
 
 ---
 # Questions
 
-#### Where does it come from?
+<br>
 
-#### How to combine multiple source of information in this context?
+## Where a given sample come from?
+
+--
+
+<br>
+
+####  ![:faic](angle-double-right )How to combine multiple source of information in this context?
 
 
 <!-- https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab -->
@@ -151,6 +172,8 @@ class: inverse, center, middle
 
 ---
 # Study case
+
+--
 
 <br>
 
@@ -164,10 +187,14 @@ class: inverse, center, middle
 ---
 # Study case
 
-#### Where does this King crab come from?
+#### Where does this lof of King crab come from?
 
 - [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
 - sustainable fishery?
+
+--
+
+<br>
 
 #### Has it been caught illegaly?
 
@@ -186,7 +213,33 @@ class: inverse, center, middle
 ## a Bayesian framework
 
 ---
-# Basic ideas
+# Basic ideas - multiple origins
+
+<br>
+
+#### One distribution:
+
+##### - per biotracer
+
+##### - and per geographic zone
+
+<!--need to define what is a meningful geographic area  -->
+
+<br>
+
+--
+
+#### .alert[We know the distribution]
+
+##### - do not waste data
+
+##### - build relevant data base
+
+
+---
+# Basic ideas - multiple origins
+
+
 
 ```{R fig0, echo = F}
 par(mypar, mfrow = c(2,1), mar = c(3, 4, 0, 1))
@@ -198,10 +251,14 @@ figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRamp
 ---
 # Basic ideas - dissimilarity
 
-```{R fig1, echo = F}
+```{R fig1, echo = F, fig.height = 4.5}
 par(mypar)
-figDens(seqx, .1*c(-1, 1), pal = c(col1, col2), lwd = 3)
+figDens(seqx, .1*c(-1, 1), pal = c(col1, col2), lwd = 3, ylim = c(0,.42))
+# tex
 ```
+
+#### .alert[![:faic](arrow-right) Tricky!]
+
 
 ---
 # Basic ideas - dissimilarity
@@ -261,12 +318,6 @@ figTwoDims(col1, col2)
 
 .center[![:scale 70%](img/fig_theo3.png)]
 
----
-# Results - spatial correlation
-
-<br>
-
-![:scale 90%](img/fig_theo4.png)
 
 
 ---
@@ -312,21 +363,39 @@ class: inverse, center, middle
 ---
 # King Crab - results
 
-![:scale 40%](img/figKC2.png)
+![:scalec 30%](img/figKC2.png)
+
+![:scalec 55%](img/figKC4.png)
+
+
+---
+# King Crab - results
+
+![:scalec 30%](img/figKC3.png)
+
+![:scalec 52%](img/figKC5.png)
+
+
+
+---
+class: inverse, center, middle
+
+# Applying the framework
+
+## Salmon example
+
+
+---
+# Results
+
+![](img/resSalmon.png)
+
 
 
 ---
 class: inverse, center, middle
 
 # Perspectives
-
-
----
-# Cunterbalance weakness
-
-Spatial fingerprint
-extenten to sptail temporal finger print
-
 
 
 
