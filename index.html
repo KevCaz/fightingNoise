@@ -209,7 +209,7 @@ class: inverse, center, middle
 
 --
 
-#### .alert[We know the distribution]
+#### .alert[Distributions are known]
 
 ##### - do not waste data
 
@@ -237,10 +237,15 @@ class: inverse, center, middle
 
 &lt;img src="index_files/figure-html/fig2-1.png" width="768" style="display: block; margin: auto;" /&gt;
 
+#### .alert[![:faic](arrow-right) Easier!]
+
 ---
 # Basic ideas - dissimilarity
 
 &lt;img src="index_files/figure-html/fig3-1.png" width="768" style="display: block; margin: auto;" /&gt;
+
+#### .alert[![:faic](arrow-right) Easier!]
+
 
 ---
 # Basic ideas - more dimensions
@@ -254,6 +259,25 @@ class: inverse, center, middle
 &lt;img src="index_files/figure-html/fig5-1.png" width="768" style="display: block; margin: auto;" /&gt;
 
 ##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
+
+
+---
+# Basic ideas - Equations
+
+&lt;br&gt;
+
+- `\(S_{n}\)` Sample of size `\(n\)`
+
+- `\([O_i|S_{n}]\)`: Probability the sample is from `\(O_i\)` given the sample.
+
+- .alert[Assumptions]:
+
+  - sample from one of the area considered
+  - no mixture
+
+
+`$$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$`
+
 
 
 ---

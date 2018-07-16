@@ -229,7 +229,7 @@ class: inverse, center, middle
 
 --
 
-#### .alert[We know the distribution]
+#### .alert[Distributions are known]
 
 ##### - do not waste data
 
@@ -254,8 +254,8 @@ figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRamp
 ```{R fig1, echo = F, fig.height = 4.5}
 par(mypar)
 figDens(seqx, .1*c(-1, 1), pal = c(col1, col2), lwd = 3, ylim = c(0,.42))
-text(-1, .3, labels = "Origin 1", col = col1, pos = 2)
-text(1, .3, labels = "Origin 1", col = col2, pos = 4)
+text(-1, .3, labels = "Origin 1", col = col1, pos = 2, cex = 2)
+text(1, .3, labels = "Origin 2", col = col2, pos = 4, cex = 2)
 # tex
 ```
 
@@ -265,18 +265,27 @@ text(1, .3, labels = "Origin 1", col = col2, pos = 4)
 ---
 # Basic ideas - dissimilarity
 
-```{R fig2, echo = F}
+```{R fig2, echo = F, fig.height = 4.5}
 par(mypar)
 figDens(seqx, 1*c(-1, 1), pal = c(col1, col2), lwd = 3, ylim = c(0,.42))
+text(-2, .3, labels = "Origin 1", col = col1, pos = 2, cex = 2)
+text(2, .3, labels = "Origin 2", col = col2, pos = 4, cex = 2)
 ```
+
+#### .alert[![:faic](arrow-right) Easier!]
 
 ---
 # Basic ideas - dissimilarity
 
-```{R fig3, echo = F}
+```{R fig3, echo = F, fig.height = 4.5}
 par(mypar)
 figDens(seqx, .15*c(-1, .1), sds = c(1, 2), pal = c(col1, col2), lwd = 3)
+text(-1, .3, labels = "Origin 1", col = col1, pos = 2, cex = 2)
+text(1.2, .18, labels = "Origin 2", col = col2, pos = 4, cex = 2)
 ```
+
+#### .alert[![:faic](arrow-right) Easier!]
+
 
 ---
 # Basic ideas - more dimensions
@@ -297,6 +306,25 @@ figTwoDims(col1, col2)
 ```
 
 ##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
+
+
+---
+# Basic ideas - Equations
+
+<br>
+
+- $S_{n}$ Sample of size $n$
+
+- $[O_i|S_{n}]$: Probability the sample is from $O_i$ given the sample.
+
+- .alert[Assumptions]:
+
+  - sample from one of the area considered
+  - no mixture
+
+
+$$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$
+
 
 
 ---
