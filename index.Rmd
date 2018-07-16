@@ -442,7 +442,6 @@ $$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$
 ---
 # Results - dimensionality
 
-<br>
 
 #### $$\text{Biotracers} \sim \mathcal{N}(\mu, \Sigma)$$
 
@@ -454,26 +453,83 @@ $$\Sigma_{i, j} = cov(X_i, X_j)$$
 
 - diagonal (variances) fixed
 
-- off-diagonal terms vary
+- off-diagonal terms vary:
 
-See [Multivariate normal distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution)
+\begin{pmatrix}
+1 & \rho \\
+\rho & 1
+\end{pmatrix}
+
+
 
 
 ---
 # Results - dimensionality (dim = 2)
 
-<br>
-
-
-.center[![:scale 70%](img/fig_theo2.png)]
+.center[![:scale 77%](img/FigCor1.png)]
 
 ---
-# Results - dimensionality
+# Results - dimensionality (dim = 2)
 
-<br>
+.center[![:scale 77%](img/FigCor2.png)]
 
-.center[![:scale 70%](img/fig_theo3.png)]
+---
+# Results - dimensionality (dim = 2)
 
+.center[![:scale 77%](img/FigCor3.png)]
+
+---
+# Results - dimensionality (dim = 2)
+
+.center[![:scale 77%](img/FigCor4.png)]
+
+---
+# Results - dimensionality (dim = 2)
+
+.center[![:scale 77%](img/FigCor5.png)]
+
+---
+# Results - dimensionality (dim = 2)
+
+.center[![:scale 77%](img/FigCor6.png)]
+
+---
+# Results - dimensionality (dim = 2)
+
+.center[![:scale 77%](img/FigCor7.png)]
+
+---
+# Results - dimensionality (dim = 2)
+
+.center[![:scale 77%](img/FigCor8.png)]
+
+---
+# Results - dimensionality (dim = 2)
+
+.center[![:scale 77%](img/FigCor9.png)]
+
+---
+# Results - dimensionality (dim = 2)
+
+.center[![:scale 77%](img/FigCor10.png)]
+
+---
+# Results - dimensionality (dim = 2)
+
+.center[![:scale 77%](img/FigCor11.png)]
+
+
+
+
+---
+# Results - dimensionality (up to 10)
+
+.center[![:scale 70%](img/fig_theo3a.png)]
+
+---
+# Results - dimensionality (up to 10)
+
+.center[![:scale 70%](img/fig_theo3b.png)]
 
 
 ---
