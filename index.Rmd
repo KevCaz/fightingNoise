@@ -682,6 +682,7 @@ class: inverse, center, middle
 
 
 
+
 ---
 class: inverse, center, middle
 
@@ -693,19 +694,18 @@ class: inverse, center, middle
 
 <br>
 
-### 1- Quantify robustness
+## Theory
+
+  - Spatial autocorrelation
+  - Temporal variation
+  - Mixture problem
 
 --
 
-### 2- Temporal variations
+## Applying the framework
 
---
-
-### 3- More dimensions (currenlty 3)
-
---
-
-### 4- Do not waste data
+  - More than 2 dimensions
+  - Isoscape and more
 
 
 ---
