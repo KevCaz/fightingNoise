@@ -157,7 +157,7 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 - gut contents,
 - etc.
 
-#### to create a spatial fingerprints
+#### to create spatial fingerprints
 
 
 ---
@@ -180,51 +180,48 @@ analytical technique.
 
 <br>
 
-## Where a given sample come from?
+## Where does this sample come from?
 
 --
 
 <br>
 
-####  ![:faic](angle-double-right )How to combine multiple source of information in this context?
+####  ![:faic](angle-double-right ) Why should we combine multiple sourcse of information in this context?
 
 
-<!-- https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab -->
 
 
 
 ---
-# Study case
+# Study case - King Crab
 
 --
 
 <br>
 
-![](img/mapKC.png)
+![](img/fig_map1.png)
 
-1. Bering sea
-2. Okhotsk sea
-3. Barents sea
+##### 1- Bering sea &nbsp;&nbsp; 2. Barents sea &nbsp;&nbsp; 3. Okhotsk sea
 
+--
+#### ![:faic](arrow-right) So... 1, 2, or 3?
 
 ---
-# Study case
+# Study case - King Crab
+
+#### Has it been caught illegaly?
+
+> [For decades, Alaska crabbers have competed against king crab illegally caught by Russian fleets.](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
+
+- illegal area / unauthorized fleets
+- illegal, unreported and unregulated (IUU) fishing has tremendous economical consequences
 
 #### Where does this lot of King crab come from?
 
 - [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
 - sustainable fishery?
 
---
-
-<br>
-
-#### Has it been caught illegaly?
-
-- illegal zone of fishery
-- [caught by people who shouldn't fish there](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
-- Estimating illegal, unreported and unregulated (IUU) King Crab import
-
+<!-- https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab -->
 
 
 
@@ -240,7 +237,7 @@ class: inverse, center, middle
 
 <br>
 
-#### One distribution:
+
 
 ##### - per biotracer
 
@@ -248,27 +245,55 @@ class: inverse, center, middle
 
 <!--need to define what is a meningful geographic area  -->
 
-<br>
-
---
-
-#### .alert[Distributions are known]
-
-##### - do not waste data
-
-##### - build relevant data base
-
 
 ---
 # Basic ideas - multiple origins
 
+```{R figA1, echo = F, fig.height = 4.5}
+par(mypar)
+figDens(seqx, means = c(-1), sds = c(1), pal = c(col1, col2), lwd = 3)
+text(-1.6, .34, labels = "Origin 1", col = col1, pos = 2, cex = 2)
+```
 
+---
+# Basic ideas - multiple origins
+
+```{R figA2, echo = F, fig.height = 4.5}
+par(mypar)
+figDens(seqx, means = c(-1, .5), sds = c(1, 1.5), pal = c(col1, col2), lwd = 3)
+text(-1.6, .34, labels = "Origin 1", col = col1, pos = 2, cex = 2)
+text(1.4, .22, labels = "Origin 2", col = col2, pos = 4, cex = 2)
+```
+
+--
+
+#### One distribution per area*biotracer
+
+
+---
+# Basic ideas - multiple origins
 
 ```{R fig0, echo = F}
 par(mypar, mfrow = c(2,1), mar = c(3, 4, 0, 1))
 figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(8), xlab = "Biotracer 1", lwd = 3)
 figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(8), xlab = "Biotracer 2", lwd = 3)
 ```
+
+
+
+---
+# Basic ideas - multiple origins
+
+<br>
+
+### .alert[Distributions are known]
+
+--
+
+### do not waste data, build relevant database!
+
+
+
 
 
 ---
@@ -587,21 +612,48 @@ class: inverse, center, middle
 
 
 ---
-# King Crab - data
+# King Crab - isoscapes
 
-![](img/mapKC.png)
+<br>
+
+![](img/fig_map1a.png)
+
+- ![:faic](external-link) [Global Seawater Oxygen-18 Databass](https://data.giss.nasa.gov/o18data/grid.html)
+
+---
+# King Crab - isoscapes
+
+<br>
+
+![](img/fig_map2a.png)
+
+- ![:faic](file-text) Magozzi, S., et al. (2017) [Using ocean models to predict spatial and temporal variation in marine carbon isotopes.](https://data.giss.nasa.gov/o18data/grid.html) *Ecosphere*
+
+
+---
+# King Crab - isoscapes
+
+<br>
+
+## ![:faic](arrow-right) δ<sup>15</sup>O + δ<sup>13</sup>C
+
+<br>
+
+## ![:faic](arrow-right) cor(δDp, δ<sup>15</sup>O) = .99
 
 
 ---
 # King Crab - assumptions
 
-![](img/mapKC.png)
+<br>
 
-- No temporal variation
+#### - The sample is from one of the three areas
 
-- Known relatioship between isoscape and tissue ratio
+#### - No temporal variation
 
-- No mixture
+#### - Regual relatioship sample ![:faic](arrow-right) isosca pe
+
+#### - No mixture
 
 
 ---
@@ -671,7 +723,7 @@ class: inverse, center, middle
 
 --
 
-### -[Biodiversity Resilience Network](http://birn.editmy.website/)
+### - [Biodiversity Resilience Network](http://birn.editmy.website/)
 
 ![:scalec 26%](img/BiRN_logo.png)
 
