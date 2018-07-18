@@ -46,7 +46,7 @@ seqx <- seq(-10, 10, .05)
 
 <br><br>
 
-##### <i class="fa fa-users" aria-hidden="true"></i> Kevin Cazelles &nbsp; .small[[McCannLab](https://www.mccannlab.org/)]
+#####  ![:faic](users) Kevin Cazelles &nbsp; .small[[McCannLab](https://www.mccannlab.org/)]
 
 ###### Emelia Myles-Gonzalez, Tyler Zemlak, Kevin S. McCann
 
@@ -57,7 +57,7 @@ seqx <- seq(-10, 10, .05)
 <br>
 
 ###### ![:faic](globe) CSEE 2018 - University of Guelph
-###### ![:faic](github) [KevCaz/fightingNoise](https://github.com/inSileco/KevCaz/fightingNoise) &nbsp;&nbsp; ![:faic](twitter) [KCazelles](https://twitter.com/KCazelles)
+###### ![:faic](github) [KevCaz/fightingNoise](https://github.com/KevCaz/fightingNoise) &nbsp;&nbsp; ![:faic](twitter) [KCazelles](https://twitter.com/KCazelles)
 
 ]
 
