@@ -16,6 +16,7 @@
 
 
 
+&lt;!-- decktape --no-sandbox file:///home/kevcaz/Github/Talks/fightingNoise/index.html /home/kevcaz/Github/Talks/fightingNoise/fightingNoise_KC.pdf --&gt;
 
 &lt;img src = "img/logoUoG.png" style = "position:absolute; width:180px; height:100px; top:240px; right:15px;"&gt;&lt;/img&gt;
 
@@ -240,13 +241,10 @@ class: inverse, center, middle
 
 #### One distribution per area*biotracer
 
-
 ---
 # Basic ideas - multiple origins
 
 &lt;img src="index_files/figure-html/fig0-1.png" width="768" style="display: block; margin: auto;" /&gt;
-
-
 
 ---
 # Basic ideas - multiple origins
@@ -260,6 +258,12 @@ class: inverse, center, middle
 ### do not waste data, build relevant database!
 
 
+---
+# Basic ideas - multiple origins
+
+&lt;img src="index_files/figure-html/figA3-1.png" width="768" style="display: block; margin: auto;" /&gt;
+
+### &amp;nbsp;&amp;nbsp; O&lt;sub&gt;1&lt;/sub&gt;|S&lt;sub&gt;n&lt;/sub&gt;?  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; S&lt;sub&gt;n&lt;/sub&gt;|O&lt;sub&gt;i&lt;/sub&gt; known!
 
 
 
@@ -305,11 +309,10 @@ class: inverse, center, middle
 
 &lt;br&gt;
 
-- `\(S_{n}\)` Sample of size `\(n\)`
 
-- `\([O_i|S_{n}]\)`: Probability the sample is from `\(O_i\)` given the sample - .alert[unknown]
-
-- `\([S_{n}|Oi]\)`: Likelihood - .alert[known distributions (1, 2, ... dimensions)]
+- S&lt;sub&gt;n&lt;/sub&gt;: Sample of size n
+- O&lt;sub&gt;1&lt;/sub&gt;|S&lt;sub&gt;n&lt;/sub&gt;?
+- S&lt;sub&gt;n&lt;/sub&gt;|O&lt;sub&gt;i&lt;/sub&gt; Likelihood
 
 --
 
@@ -318,65 +321,56 @@ class: inverse, center, middle
   - sample from one of the area considered
   - no mixture
 
+--
 
-`$$[O_i|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$`
+- Bayesian Inversion rule:
 
+![:scalec](img/Bayes.png)
 
-
----
-# What does the theory say?
-
-&lt;br&gt;
-
-- Multinormal
-- Increasing sample size
-- Sample if from 1
-
-
-
+&lt;!-- `$$[O_1|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$` --&gt;
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigMu1.png)]
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigMu2.png)]
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigMu3.png)]
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigMu4.png)]
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigMu5.png)]
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigMu6.png)]
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigMu7.png)]
@@ -384,47 +378,47 @@ class: inverse, center, middle
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigSd1.png)]
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigSd2.png)]
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigSd3.png)]
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigSd4.png)]
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigSd5.png)]
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigSd6.png)]
 
 
 ---
-# Results - dissimilarity
+# Theory - dissimilarity
 &lt;br&gt;
 
 .center[![:scale 92%](img/FigSd7.png)]
@@ -432,16 +426,14 @@ class: inverse, center, middle
 
 
 ---
-# Results - dimensionality
+# Theory - dimensionality
 
 
-#### `$$\text{Biotracers} \sim \mathcal{N}(\mu, \Sigma)$$`
+#### Biotracers ~ N(μ, Σ)
 
-##### `\(\mu\)`: means - fixed
+##### μ: means - fixed
 
-##### `\(\Sigma\)`: covariance matrix
-
-`$$\Sigma_{i, j} = cov(X_i, X_j)$$`
+##### Σ: covariance matrix
 
 - diagonal (variances) fixed
 
@@ -456,57 +448,57 @@ class: inverse, center, middle
 
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor1.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor2.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor3.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor4.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor5.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor6.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor7.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor8.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor9.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor10.png)]
 
 ---
-# Results - dimensionality (dim = 2)
+# Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor11.png)]
 
@@ -514,12 +506,12 @@ class: inverse, center, middle
 
 
 ---
-# Results - dimensionality (up to 10)
+# Theory - dimensionality (up to 10)
 
 .center[![:scale 70%](img/fig_theo3a.png)]
 
 ---
-# Results - dimensionality (up to 10)
+# Theory - dimensionality (up to 10)
 
 .center[![:scale 70%](img/fig_theo3b.png)]
 
@@ -595,25 +587,70 @@ class: inverse, center, middle
 
 #### - No temporal variation
 
-#### - Regual relatioship sample ![:faic](arrow-right) isosca pe
+#### - Regular relatioship sample ![:faic](arrow-right) isoscape
 
 #### - No mixture
 
+#### - Sample is from Alaska, so O&lt;sub&gt;1&lt;/sub&gt;|S&lt;sub&gt;n&lt;/sub&gt;?
+
+
+---
+# King Crab - raw distribution
+
+&lt;br&gt;
+
+![:scalec 92%](img/fig_Distr1.png)
+
+---
+# King Crab - raw distribution
+
+![:scalec 80%](img/fig_Res1a.png)
+
+---
+# King Crab - raw distribution
+
+![:scalec 80%](img/fig_Res1b.png)
+
+
+---
+# King Crab - raw distribution + noise
+
+&lt;br&gt;
+
+![:scalec 92%](img/fig_Distr2.png)
+
+---
+# King Crab - raw distribution
+
+![:scalec 80%](img/fig_Res2a.png)
+
+---
+# King Crab - raw distribution
+
+![:scalec 80%](img/fig_Res2b.png)
+
+
+
+
 
 ---
 # King Crab - results
 
-![:scalec 30%](img/figKC2.png)
+&lt;br&gt;
 
-![:scalec 55%](img/figKC4.png)
+.column[
+  ![:scalec 90%](img/fig_Res1b.png)
+]
+
+.column[
+  ![:scalec 45%](img/fig_Res2b.png)
+]
+
+--
+
+### ![:faic](arrow-right) Fighting noise with dimensionality!
 
 
----
-# King Crab - results
-
-![:scalec 30%](img/figKC3.png)
-
-![:scalec 52%](img/figKC5.png)
 
 
 
@@ -635,21 +672,20 @@ class: inverse, center, middle
 ---
 # Perspectives
 
-&lt;br&gt;
 
-### 1- Quantify robustness
+## ![:faic](arrow-right) Theory
 
---
-
-### 2- Temporal variations
-
---
-
-### 3- More dimensions (currenlty 3)
+  - Spatial autocorrelation
+  - Mixture problem
+  - Temporal variations
 
 --
 
-### 4- Do not waste data
+##  ![:faic](arrow-right) Applying the framework
+
+  - More than 2 dimensions
+  - Isoscape and more
+  - Based on real samples
 
 
 ---

@@ -1,5 +1,6 @@
 #
 Makefile
+*.pdf
 
 # History files
 .Rhistory
