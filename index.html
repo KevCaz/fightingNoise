@@ -130,7 +130,7 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 ---
 # Biotracers
 
-#### Anything that could be informative:
+#### Anything that could be informative...
 
 - trace elements,
 - isotopes (delta),
@@ -138,7 +138,7 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 - gut contents,
 - etc.
 
-#### to create spatial fingerprints
+#### ... to create spatial fingerprints
 
 
 ---
@@ -167,25 +167,8 @@ analytical technique.
 
 &lt;br&gt;
 
-####  ![:faic](angle-double-right ) Why should we combine multiple sourcse of information in this context?
+####  ![:faic](angle-double-right ) Why should we combine multiple sources of information in this context?
 
-
-
-
-
----
-# Study case - King Crab
-
---
-
-&lt;br&gt;
-
-![](img/fig_map1.png)
-
-##### 1- Bering sea &amp;nbsp;&amp;nbsp; 2. Barents sea &amp;nbsp;&amp;nbsp; 3. Okhotsk sea
-
---
-#### ![:faic](arrow-right) So... 1, 2, or 3?
 
 ---
 # Study case - King Crab
@@ -202,7 +185,28 @@ analytical technique.
 - [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
 - sustainable fishery?
 
+
+
+---
+# Study case - King Crab
+
+&lt;br&gt;
+
+![](img/fig_map1.png)
+
+##### 1- Bering sea &amp;nbsp;&amp;nbsp; 2. Barents sea &amp;nbsp;&amp;nbsp; 3. Okhotsk sea
+
+--
+#### ![:faic](arrow-right) So... 1, 2, or 3?
+
+
 &lt;!-- https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab --&gt;
+
+
+
+
+
+
 
 
 
@@ -213,16 +217,6 @@ class: inverse, center, middle
 
 ## a Bayesian framework
 
----
-# Basic ideas - multiple origins
-
-&lt;br&gt;
-
-
-
-##### - per biotracer
-
-##### - and per geographic zone
 
 &lt;!--need to define what is a meningful geographic area  --&gt;
 
@@ -239,7 +233,7 @@ class: inverse, center, middle
 
 --
 
-#### One distribution per area*biotracer
+#### One distribution per area*biotracer*product
 
 ---
 # Basic ideas - multiple origins
@@ -263,7 +257,7 @@ class: inverse, center, middle
 
 &lt;img src="index_files/figure-html/figA3-1.png" width="768" style="display: block; margin: auto;" /&gt;
 
-### &amp;nbsp;&amp;nbsp; O&lt;sub&gt;1&lt;/sub&gt;|S&lt;sub&gt;n&lt;/sub&gt;?  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; S&lt;sub&gt;n&lt;/sub&gt;|O&lt;sub&gt;i&lt;/sub&gt; known!
+### &amp;nbsp; O&lt;sub&gt;1&lt;/sub&gt; | Sample ?  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Sample | O&lt;sub&gt;i&lt;/sub&gt; known!
 
 
 
@@ -311,23 +305,23 @@ class: inverse, center, middle
 
 
 - S&lt;sub&gt;n&lt;/sub&gt;: Sample of size n
-- O&lt;sub&gt;1&lt;/sub&gt;|S&lt;sub&gt;n&lt;/sub&gt;?
-- S&lt;sub&gt;n&lt;/sub&gt;|O&lt;sub&gt;i&lt;/sub&gt; Likelihood
+- O&lt;sub&gt;1&lt;/sub&gt; | S&lt;sub&gt;n&lt;/sub&gt;?
+- S&lt;sub&gt;n&lt;/sub&gt; | O&lt;sub&gt;i&lt;/sub&gt; Likelihood
 
 --
 
 - .alert[Assumptions]:
 
-  - sample from one of the area considered
+  - sample from one of the 3 areas considered
   - no mixture
 
 --
 
-- Bayesian Inversion rule:
+- Bayesian inversion rule:
 
-![:scalec](img/Bayes.png)
+![:scalec 34%](img/Bayes.png)
 
-&lt;!-- `$$[O_1|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$` --&gt;
+&lt;!-- `$$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$` --&gt;
 
 ---
 # Theory - dissimilarity
@@ -431,18 +425,24 @@ class: inverse, center, middle
 
 #### Biotracers ~ N(μ, Σ)
 
+--
+
 ##### μ: means - fixed
+
+--
 
 ##### Σ: covariance matrix
 
 - diagonal (variances) fixed
 
-- off-diagonal terms vary:
+- off-diagonal terms (symetric) vary:
 
-`\begin{pmatrix}
+.center[![:scale 20%](img/covariance.png)]
+
+&lt;!-- \begin{pmatrix}
 1 &amp; \rho \\
 \rho &amp; 1
-\end{pmatrix}`
+\end{pmatrix} --&gt;
 
 
 
@@ -609,7 +609,19 @@ class: inverse, center, middle
 ---
 # King Crab - raw distribution
 
+![:scalec 80%](img/fig_Res1aa.png)
+
+---
+# King Crab - raw distribution
+
 ![:scalec 80%](img/fig_Res1b.png)
+
+---
+# King Crab - raw distribution
+
+![:scalec 80%](img/fig_Res1bb.png)
+
+
 
 
 ---
@@ -630,16 +642,13 @@ class: inverse, center, middle
 ![:scalec 80%](img/fig_Res2b.png)
 
 
-
-
-
 ---
 # King Crab - results
 
 &lt;br&gt;
 
 .column[
-  ![:scalec 90%](img/fig_Res1b.png)
+  ![:scalec 90%](img/fig_Res1bb.png)
 ]
 
 .column[

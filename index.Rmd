@@ -150,7 +150,7 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 ---
 # Biotracers
 
-#### Anything that could be informative:
+#### Anything that could be informative...
 
 - trace elements,
 - isotopes (delta),
@@ -158,7 +158,7 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 - gut contents,
 - etc.
 
-#### to create spatial fingerprints
+#### ... to create spatial fingerprints
 
 
 ---
@@ -187,25 +187,8 @@ analytical technique.
 
 <br>
 
-####  ![:faic](angle-double-right ) Why should we combine multiple sourcse of information in this context?
+####  ![:faic](angle-double-right ) Why should we combine multiple sources of information in this context?
 
-
-
-
-
----
-# Study case - King Crab
-
---
-
-<br>
-
-![](img/fig_map1.png)
-
-##### 1- Bering sea &nbsp;&nbsp; 2. Barents sea &nbsp;&nbsp; 3. Okhotsk sea
-
---
-#### ![:faic](arrow-right) So... 1, 2, or 3?
 
 ---
 # Study case - King Crab
@@ -222,7 +205,28 @@ analytical technique.
 - [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
 - sustainable fishery?
 
+
+
+---
+# Study case - King Crab
+
+<br>
+
+![](img/fig_map1.png)
+
+##### 1- Bering sea &nbsp;&nbsp; 2. Barents sea &nbsp;&nbsp; 3. Okhotsk sea
+
+--
+#### ![:faic](arrow-right) So... 1, 2, or 3?
+
+
 <!-- https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab -->
+
+
+
+
+
+
 
 
 
@@ -233,16 +237,6 @@ class: inverse, center, middle
 
 ## a Bayesian framework
 
----
-# Basic ideas - multiple origins
-
-<br>
-
-
-
-##### - per biotracer
-
-##### - and per geographic zone
 
 <!--need to define what is a meningful geographic area  -->
 
@@ -268,7 +262,7 @@ text(1.4, .22, labels = "Origin 2", col = col2, pos = 4, cex = 2)
 
 --
 
-#### One distribution per area*biotracer
+#### One distribution per area*biotracer*product
 
 ---
 # Basic ideas - multiple origins
@@ -301,7 +295,7 @@ text(-1.6, .34, labels = "Origin 1 TRUE", col = col1, pos = 2, cex = 2)
 text(1.4, .22, labels = "Origin 2 FALSE", col = col2, pos = 4, cex = 2)
 ```
 
-### &nbsp;&nbsp; O<sub>1</sub>|S<sub>n</sub>?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S<sub>n</sub>|O<sub>i</sub> known!
+### &nbsp; O<sub>1</sub> | Sample ?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sample | O<sub>i</sub> known!
 
 
 
@@ -372,23 +366,23 @@ figTwoDims(col1, col2)
 
 
 - S<sub>n</sub>: Sample of size n
-- O<sub>1</sub>|S<sub>n</sub>?
-- S<sub>n</sub>|O<sub>i</sub> Likelihood
+- O<sub>1</sub> | S<sub>n</sub>?
+- S<sub>n</sub> | O<sub>i</sub> Likelihood
 
 --
 
 - .alert[Assumptions]:
 
-  - sample from one of the area considered
+  - sample from one of the 3 areas considered
   - no mixture
 
 --
 
-- Bayesian Inversion rule:
+- Bayesian inversion rule:
 
-![:scalec](img/Bayes.png)
+![:scalec 34%](img/Bayes.png)
 
-<!-- $$[O_1|S_{n}] = \frac{[S_{n}|O_i][O_i]}{\sum_j [S_{n}|O_j][O_j]}$$ -->
+<!-- $$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$ -->
 
 ---
 # Theory - dissimilarity
@@ -492,18 +486,24 @@ figTwoDims(col1, col2)
 
 #### Biotracers ~ N(μ, Σ)
 
+--
+
 ##### μ: means - fixed
+
+--
 
 ##### Σ: covariance matrix
 
 - diagonal (variances) fixed
 
-- off-diagonal terms vary:
+- off-diagonal terms (symetric) vary:
 
-\begin{pmatrix}
+.center[![:scale 20%](img/covariance.png)]
+
+<!-- \begin{pmatrix}
 1 & \rho \\
 \rho & 1
-\end{pmatrix}
+\end{pmatrix} -->
 
 
 
@@ -670,7 +670,19 @@ class: inverse, center, middle
 ---
 # King Crab - raw distribution
 
+![:scalec 80%](img/fig_Res1aa.png)
+
+---
+# King Crab - raw distribution
+
 ![:scalec 80%](img/fig_Res1b.png)
+
+---
+# King Crab - raw distribution
+
+![:scalec 80%](img/fig_Res1bb.png)
+
+
 
 
 ---
@@ -691,16 +703,13 @@ class: inverse, center, middle
 ![:scalec 80%](img/fig_Res2b.png)
 
 
-
-
-
 ---
 # King Crab - results
 
 <br>
 
 .column[
-  ![:scalec 90%](img/fig_Res1b.png)
+  ![:scalec 90%](img/fig_Res1bb.png)
 ]
 
 .column[
