@@ -230,6 +230,8 @@ analytical technique.
 
 
 
+
+
 ---
 class: inverse, center, middle
 
@@ -260,9 +262,6 @@ text(-1.6, .34, labels = "Origin 1", col = col1, pos = 2, cex = 2)
 text(1.4, .22, labels = "Origin 2", col = col2, pos = 4, cex = 2)
 ```
 
---
-
-#### One distribution per area*biotracer*product
 
 ---
 # Basic ideas - multiple origins
@@ -364,13 +363,6 @@ figTwoDims(col1, col2)
 
 <br>
 
-
-- S<sub>n</sub>: Sample of size n
-- O<sub>1</sub> | S<sub>n</sub>?
-- S<sub>n</sub> | O<sub>i</sub> Likelihood
-
---
-
 - .alert[Assumptions]:
 
   - sample from one of the 3 areas considered
@@ -378,7 +370,13 @@ figTwoDims(col1, col2)
 
 --
 
-- Bayesian inversion rule:
+- .alert[Question] O<sub>1</sub> | S<sub>n</sub>?
+- S<sub>n</sub>: Sample of size n
+
+--
+
+
+- .alert[Method:] Bayesian inversion rule:
 
 ![:scalec 34%](img/Bayes.png)
 
@@ -432,6 +430,7 @@ figTwoDims(col1, col2)
 
 
 
+
 ---
 # Theory - dissimilarity
 <br>
@@ -478,6 +477,9 @@ figTwoDims(col1, col2)
 
 .center[![:scale 92%](img/FigSd7.png)]
 
+--
+
+### ![:faic](angle-double-right) The more dissimilar the better
 
 
 ---
@@ -593,6 +595,9 @@ figTwoDims(col1, col2)
 --
 
 ##### ![:faic](angle-double-right) The curse of dimensionality becomes the blessing of dimensionality.
+
+
+
 
 
 
