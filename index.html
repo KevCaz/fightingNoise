@@ -259,28 +259,30 @@ class: inverse, center, middle
 ### &amp;nbsp; O&lt;sub&gt;1&lt;/sub&gt; | Sample ?  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Sample | O&lt;sub&gt;i&lt;/sub&gt; known!
 
 
-
 ---
-# Basic ideas - dissimilarity
+# Basic ideas -Bayesian rule
 
-&lt;img src="index_files/figure-html/fig1-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
 
-#### .alert[![:faic](arrow-right) Tricky!]
+- .alert[Assumptions]:
+
+  - sample from one of the areas considered
+  - no mixture
+
+--
+
+- .alert[Question] O&lt;sub&gt;1&lt;/sub&gt; | S&lt;sub&gt;n&lt;/sub&gt;?
+- S&lt;sub&gt;n&lt;/sub&gt;: Sample of size n
+
+--
 
 
----
-# Basic ideas - dissimilarity
+- .alert[Method:] Bayesian inversion rule:
 
-&lt;img src="index_files/figure-html/fig2-1.png" width="768" style="display: block; margin: auto;" /&gt;
+![:scalec 34%](img/Bayes.png)
 
-#### .alert[![:faic](arrow-right) Easier!]
+&lt;!-- `$$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$` --&gt;
 
----
-# Basic ideas - dissimilarity
-
-&lt;img src="index_files/figure-html/fig3-1.png" width="768" style="display: block; margin: auto;" /&gt;
-
-#### .alert[![:faic](arrow-right) Easier!]
 
 
 ---
@@ -297,29 +299,7 @@ class: inverse, center, middle
 ##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
 
 
----
-# Basic ideas - Equations
 
-&lt;br&gt;
-
-- .alert[Assumptions]:
-
-  - sample from one of the 3 areas considered
-  - no mixture
-
---
-
-- .alert[Question] O&lt;sub&gt;1&lt;/sub&gt; | S&lt;sub&gt;n&lt;/sub&gt;?
-- S&lt;sub&gt;n&lt;/sub&gt;: Sample of size n
-
---
-
-
-- .alert[Method:] Bayesian inversion rule:
-
-![:scalec 34%](img/Bayes.png)
-
-&lt;!-- `$$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$` --&gt;
 
 ---
 # Theory - dissimilarity
@@ -418,7 +398,31 @@ class: inverse, center, middle
 
 --
 
-### ![:faic](angle-double-right) The more dissimilar the better
+
+
+---
+# ![:faic](angle-double-right) The more dissimilar the better
+
+&lt;img src="index_files/figure-html/fig1-1.png" width="768" style="display: block; margin: auto;" /&gt;
+
+#### .alert[![:faic](arrow-right) Tricky!]
+
+
+---
+# ![:faic](angle-double-right) The more dissimilar the better
+
+&lt;img src="index_files/figure-html/fig2-1.png" width="768" style="display: block; margin: auto;" /&gt;
+
+#### .alert[![:faic](arrow-right) Easier!]
+
+---
+# ![:faic](angle-double-right) The more dissimilar the better
+
+&lt;img src="index_files/figure-html/fig3-1.png" width="768" style="display: block; margin: auto;" /&gt;
+
+#### .alert[![:faic](arrow-right) Easier!]
+
+
 
 
 ---
