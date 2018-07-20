@@ -190,25 +190,10 @@ analytical technique.
 ####  ![:faic](angle-double-right ) Why should we combine multiple sources of information in this context?
 
 
----
-# Study case - King Crab
-
-#### Has it been caught illegaly?
-
-> [For decades, Alaska crabbers have competed against king crab illegally caught by Russian fleets.](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
-
-- illegal area / unauthorized fleets
-- illegal, unreported and unregulated (IUU) fishing has tremendous economical consequences
-
-#### Where does this lot of King crab come from?
-
-- [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
-- sustainable fishery?
-
-
 
 ---
-# Study case - King Crab
+# Where does this this lot come from?
+
 
 <br>
 
@@ -298,7 +283,7 @@ text(1.4, .22, labels = "Origin 2 FALSE", col = col2, pos = 4, cex = 2)
 
 
 ---
-# Basic ideas -Bayesian rule
+# A bayesian apporach
 
 <br>
 
@@ -310,14 +295,11 @@ text(1.4, .22, labels = "Origin 2 FALSE", col = col2, pos = 4, cex = 2)
 --
 
 - .alert[Question] O<sub>1</sub> | S<sub>n</sub>?
-- S<sub>n</sub>: Sample of size n
 
 --
 
+- .alert[Method:] Bayesian inversion rule
 
-- .alert[Method:] Bayesian inversion rule:
-
-![:scalec 34%](img/Bayes.png)
 
 <!-- $$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$ -->
 
@@ -576,8 +558,6 @@ class: inverse, center, middle
 
 #### * No temporal variation
 
-#### * Regular relatioship sample ![:faic](arrow-right) isoscape
-
 #### * No mixture
 
 
@@ -807,6 +787,12 @@ par(mypar)
 figOneDim(col1, col2)
 ```
 
+---
+# Bayesian rule
+
+![:scalec 40%](img/Bayes.png)
+
+
 
 ---
 # Basic ideas - more dimensions
@@ -818,3 +804,20 @@ figTwoDims(col1, col2)
 ```
 
 ##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
+
+
+
+---
+# Study case - King Crab
+
+#### Has it been caught illegaly?
+
+> [For decades, Alaska crabbers have competed against king crab illegally caught by Russian fleets.](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
+
+- illegal area / unauthorized fleets
+- illegal, unreported and unregulated (IUU) fishing has tremendous economical consequences
+
+#### Where does this lot of King crab come from?
+
+- [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
+- sustainable fishery?
