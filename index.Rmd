@@ -637,11 +637,11 @@ class: inverse, center, middle
 
 <br>
 
-## ![:faic](arrow-right) δ<sup>15</sup>O + δ<sup>13</sup>C
+## ![:faic](arrow-right) δ<sup>18</sup>O + δ<sup>13</sup>C
 
 <br>
 
-## ![:faic](arrow-right) cor(δDp, δ<sup>15</sup>O) = .99
+## ![:faic](arrow-right) cor(δDp, δ<sup>18</sup>O) = .99
 
 
 ---
@@ -688,6 +688,13 @@ class: inverse, center, middle
 ![:scalec 80%](img/fig_Res1bb.png)
 
 
+
+---
+# King Crab - raw distribution
+
+<br>
+
+![:scalec 92%](img/fig_Distr1.png)
 
 
 ---
