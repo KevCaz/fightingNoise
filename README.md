@@ -1,6 +1,12 @@
 # fightingNoise
 
-Fighting Noise with dimensionality CSEE 2018
+Fighting Noise with dimensionality
+
+## Version 1
+
+July 21st, CSEE 2018, University of Guelph.
+
+
 
 
 ## How to get a pdf version
