@@ -16,9 +16,8 @@ output:
       #countdown: 60000
 ---
 
-```{r setup, echo = F}
+```{r setup, echo = FALSE}
 library(graphicsutils)
-source("rscripts/figDens.R")
 knitr::opts_chunk$set(
   comment = "#>",
   collapse = TRUE,
@@ -34,6 +33,7 @@ pal <- gpuPalette("insileco")
 col2 <- "#3fb3b2"
 col1 <- "#375771"
 seqx <- seq(-10, 10, .05)
+source("rscripts/figDens.R")
 ```
 
 <!-- decktape --no-sandbox file:///home/kevcaz/Github/Talks/fightingNoise/index.html /home/kevcaz/Github/Talks/fightingNoise/fightingNoise_KC.pdf -->
@@ -56,7 +56,7 @@ seqx <- seq(-10, 10, .05)
 
 <br>
 
-###### ![:faic](globe) CSEE 2018 - University of Guelph
+###### ![:faic](globe) 23/10/2018 - University of Guelph
 ###### ![:faic](github) [KevCaz/fightingNoise](https://github.com/KevCaz/fightingNoise) &nbsp;&nbsp; ![:faic](twitter) [KCazelles](https://twitter.com/KCazelles)
 
 ]
@@ -77,27 +77,24 @@ seqx <- seq(-10, 10, .05)
 ---
 class: inverse, center, middle
 
-# Before I start
-
-## Facts that are worth mentioning
+# About me
 
 
 ---
 
-# Facts that are worth mentioning
+# About me
 
 <br>
 
-### 1. I won't talk about any trophic interaction
+### 1. I'm post-doctoral fellow
 
 --
 
-### 2. Fish? hum, yes!
+### 2. PhD in Biogeography Rimouski/Montpellier
 
 --
 
-### 3. I'm not trying to reinvent the wheel
-
+### 3. Theory / Statistics / Computer Science
 
 
 
@@ -109,6 +106,24 @@ class: inverse, center, middle
 # Context
 
 ## The push for provenance
+
+---
+# Where does it come from?
+
+
+## it = seafood
+
+--
+
+## Why does it matter?
+
+--
+
+### - health
+
+### - sustainability
+
+### - economical reasons
 
 
 ---
@@ -127,6 +142,14 @@ rights abuses are better understood.
 Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf)
 
 
+---
+# Give people the choice
+
+![:scalec 44%](img/cardreport.png)
+
+* ![:faic](file-text) Roebuck, K. et al. (2017)
+[Canadian's Eating in the Dark: A Report Card of International
+Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf)
 
 
 ---
@@ -134,7 +157,7 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 
 <br>
 
-#### - We need regulations
+#### 1. We need regulations
 
 ##### *e.g.* Country of Origin Labelling (COOL) in USA
 
@@ -142,13 +165,16 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 
 --
 
-#### - We need tools to authenticate the provenance
+#### 2. We need tools to authenticate the provenance
 
-##### ![:faic](arrow-right) What this talk is about!
+##### ![:faic](arrow-right) Well that's what the talk is about!
 
+##### ![:faic](arrow-right) We try to combine biotracers to do so
 
 ---
 # Biotracers
+
+--
 
 #### Anything that could be informative...
 
@@ -173,7 +199,7 @@ analytical technique.
 
 * ![:faic](file-text) Danezis, G. P., et al. (2016)
 [Food authentication: state of the art and prospects](https://www.sciencedirect.com/science/article/pii/S2214799316300844).
-*Current Opinion in Food Science*]
+*Current Opinion in Food Science*
 
 
 ---
@@ -187,13 +213,12 @@ analytical technique.
 
 <br>
 
-####  ![:faic](angle-double-right ) Why should we combine multiple sources of information in this context?
+####  ![:faic](angle-double-right) Why should we combine multiple sources of information in this context? How to do so?
 
 
 
 ---
-# Where does this this lot come from?
-
+# Where does it come from?
 
 <br>
 
@@ -201,11 +226,42 @@ analytical technique.
 
 ##### 1- Bering sea &nbsp;&nbsp; 2. Barents sea &nbsp;&nbsp; 3. Okhotsk sea
 
---
-#### ![:faic](arrow-right) So... 1, 2, or 3?
+
+---
+# Study case - King Crab
+
+#### Has it been caught illegaly?
+
+> [For decades, Alaska crabbers have competed against king crab illegally caught by Russian fleets.](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
+
+- illegal area / unauthorized fleets
+- illegal, unreported and unregulated (IUU) fishing has tremendous economical consequences
+
+#### Where does this lot of King crab come from?
+
+- [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
+- sustainable fishery?
+
+https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab
+
+---
+# Where does it come from?
+
+<br>
+
+![](img/fig_map1.png)
+
+##### 1- Bering sea &nbsp;&nbsp; 2. Barents sea &nbsp;&nbsp; 3. Okhotsk sea
 
 
-<!-- https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab -->
+---
+
+# So... the 1, 2, or 3?
+
+![:scalec 80%](img/drunkenKC.png)
+
+* ![:faic](file-text) [Drunken Alaska King Crab Legs](https://iowagirleats.com/2013/12/11/drunken-alaska-king-crab-legs-hy-vee-cooking-video/)
+
 
 
 
@@ -222,10 +278,6 @@ class: inverse, center, middle
 
 # Theory
 
-## a Bayesian framework
-
-
-<!--need to define what is a meningful geographic area  -->
 
 
 ---
@@ -240,7 +292,7 @@ text(-1.6, .34, labels = "Origin 1", col = col1, pos = 2, cex = 2)
 ---
 # Basic ideas - multiple origins
 
-```{R figA2, echo = F, fig.height = 4.5}
+```{R figA2, echo = FALSE, fig.height = 4.5}
 par(mypar)
 figDens(seqx, means = c(-1, .5), sds = c(1, 1.5), pal = c(col1, col2), lwd = 3)
 text(-1.6, .34, labels = "Origin 1", col = col1, pos = 2, cex = 2)
@@ -251,59 +303,23 @@ text(1.4, .22, labels = "Origin 2", col = col2, pos = 4, cex = 2)
 ---
 # Basic ideas - multiple origins
 
-```{R fig0, echo = F}
-par(mypar, mfrow = c(2,1), mar = c(3, 4, 0, 1))
-figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(8), xlab = "Biotracer 1", lwd = 3)
-figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(8), xlab = "Biotracer 2", lwd = 3)
+```{R fig0, echo = FALSE, fig.height = 5.4}
+n <- 4
+par(mypar, mfrow = c(2,1), mar = c(3, 4, 0, 3))
+figDens(seqx, ylim = c(0, .8), runif(n, -2, 2), runif(n, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(n), xlab = "Biotracer 1", lwd = 3)
+figDens(seqx, ylim = c(0, .8), runif(n, -2, 2), runif(n, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(n), xlab = "Biotracer 2", lwd = 3)
 ```
 
----
-# Basic ideas - multiple origins
-
-<br>
-
-### .alert[Distributions are known]
-
---
-
-### do not waste data, build relevant database!
-
 
 ---
 # Basic ideas - multiple origins
 
-```{R figA3, echo = F, fig.height = 4.25}
+```{R figA3, echo = F, fig.height = 4.2}
 par(mypar)
 figDens(seqx, means = c(-1, .5), sds = c(1, 1.5), pal = c(col1, col2), lwd = 3, ylim = c(0, .44))
 text(-1.6, .34, labels = "Origin 1 TRUE", col = col1, pos = 2, cex = 2)
 text(1.4, .22, labels = "Origin 2 FALSE", col = col2, pos = 4, cex = 2)
 ```
-
-### &nbsp; O<sub>1</sub> | Sample ?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sample | O<sub>i</sub> known!
-
-
----
-# A bayesian apporach
-
-<br>
-
-- .alert[Assumptions]:
-
-  - sample from one of the areas considered
-  - no mixture
-
---
-
-- .alert[Question] O<sub>1</sub> | S<sub>n</sub>?
-
---
-
-- .alert[Method:] Bayesian inversion rule
-
-
-<!-- $$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$ -->
-
-
 
 
 ---
@@ -442,6 +458,27 @@ text(1.4, .22, labels = "Origin 2 FALSE", col = col2, pos = 4, cex = 2)
 .center[![:scale 77%](img/FigCor1.png)]
 
 ---
+# Basic ideas - more dimensions
+
+```{R fig44, echo = F}
+par(mypar)
+figOneDim(col1, col2)
+```
+
+
+
+---
+# Basic ideas - more dimensions
+
+```{R fig55, echo = F, fig.height = 4.8}
+par(mypar)
+par(mar = c(3, 3, 2, 2))
+figTwoDims(col1, col2)
+```
+
+##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
+
+---
 # Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor2.png)]
@@ -544,22 +581,6 @@ class: inverse, center, middle
 <br>
 
 ![](img/fig_map1.png)
-
---
-
-#### - .alert[Question]: O<sub>1</sub>|S<sub>n</sub>?
-
----
-# King Crab - an example
-
-#### - .alert[Assumptions]:
-
-#### * The sample is from one of the three areas
-
-#### * No temporal variation
-
-#### * No mixture
-
 
 
 ---
@@ -708,24 +729,11 @@ class: inverse, center, middle
 
 
 ---
-# Thanks to
+# Perspectives
 
---
+<br>
 
-### - my coauthors and [the McCannLab](https://www.mccannlab.org/)
-
---
-
-### - [Food From Thought](https://arrellfoodinstitute.ca/food-from-thought/)
-
-![:scalec 34%](img/CanadaFirst.png)
-
---
-
-### - [Biodiversity Resilience Network](http://birn.editmy.website/)
-
-![:scalec 26%](img/BiRN_logo.png)
-
+![:scalec 75%](img/tuna1.png)
 
 ---
 class: inverse, center, middle
@@ -804,20 +812,3 @@ figTwoDims(col1, col2)
 ```
 
 ##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
-
-
-
----
-# Study case - King Crab
-
-#### Has it been caught illegaly?
-
-> [For decades, Alaska crabbers have competed against king crab illegally caught by Russian fleets.](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
-
-- illegal area / unauthorized fleets
-- illegal, unreported and unregulated (IUU) fishing has tremendous economical consequences
-
-#### Where does this lot of King crab come from?
-
-- [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
-- sustainable fishery?

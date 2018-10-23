@@ -3,8 +3,8 @@ figDens <- function(seqx, means, sds = rep(1, length(means)), pal = 1:length(mea
   xlab = "Values taken by the biotracer", ylab = "Density", xlim = c(-5, 5), ylim = c(0, .5), ...) {
   plot0(xlim, ylim)
   for (i in 1:length(means)) lines(seqx, dnorm(seqx, means[i], sds[i]), col = pal[i], ...)
-  mtext(1, text = xlab, cex = 1.48)
-  mtext(2, text = ylab, cex = 1.48)
+  mtext(1, text = xlab, cex = 1.48, line = 1.6)
+  mtext(2, text = ylab, cex = 1.48, line = 1.6)
 }
 
 ##Figure twoDims
@@ -55,3 +55,16 @@ figOneDim <- function(col1, col2) {
   text(0, -.9, labels = "Values", cex = 1.4)
 
 }
+
+
+mypar <- list(fg = "grey70", bg = "transparent")
+
+png(file = "distr_tuna.png", res = 300, unit = "in", width = 6, height = 8)
+n <- 3
+mypal <- c("black", "grey70", "grey30")
+par(mypar, mfrow = c(2,1), mar = c(1.5, .5, .5, .5))
+figDens(seqx, ylim = c(0, .4), runif(n, -3, 3), runif(n, 1, 2), ylab = "", xlab = "", lwd = 10, pal = mypal)
+box2(1:2, lwd = 8)
+figDens(seqx, ylim = c(0, .8), runif(n, -1, 2), runif(n, .4, 1), ylab = "", xlab = "", lwd = 10,  pal = mypal)
+box2(1:2, lwd = 8)
+dev.off()

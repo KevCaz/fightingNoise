@@ -1,6 +1,6 @@
 # fightingNoise
 
-Fighting Noise with dimensionality
+Fighting noise with dimensionality
 
 ## Version 1
 
