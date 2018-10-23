@@ -110,6 +110,7 @@ class: inverse, center, middle
 ---
 # Where does it come from?
 
+--
 
 ## it = seafood
 
@@ -148,8 +149,7 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 ![:scalec 44%](img/cardreport.png)
 
 * ![:faic](file-text) Roebuck, K. et al. (2017)
-[Canadian's Eating in the Dark: A Report Card of International
-Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf)
+[Canadian's Eating in the Dark](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf)
 
 
 ---
@@ -159,7 +159,9 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 
 #### 1. We need regulations
 
-##### *e.g.* Country of Origin Labelling (COOL) in USA
+##### - *e.g.* Country of Origin Labelling (COOL) in USA
+
+##### - [vessel-sinking policy](https://www.scientificamerican.com/article/blowing-up-illegal-fishing-boats-helps-indonesian-fishers/)
 
 <br>
 
@@ -167,9 +169,9 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 
 #### 2. We need tools to authenticate the provenance
 
-##### ![:faic](arrow-right) Well that's what the talk is about!
+##### ![:faic](arrow-right) Well that's what the talk is about
 
-##### ![:faic](arrow-right) We try to combine biotracers to do so
+##### ![:faic](arrow-right) We combine biotracers to do so
 
 ---
 # Biotracers
@@ -218,7 +220,7 @@ analytical technique.
 
 
 ---
-# Where does it come from?
+# Study case - King Crab
 
 <br>
 
@@ -230,19 +232,15 @@ analytical technique.
 ---
 # Study case - King Crab
 
-#### Has it been caught illegaly?
+#### Where does this lot of King crab come from?
 
 > [For decades, Alaska crabbers have competed against king crab illegally caught by Russian fleets.](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
 
-- illegal area / unauthorized fleets
 - illegal, unreported and unregulated (IUU) fishing has tremendous economical consequences
-
-#### Where does this lot of King crab come from?
-
 - [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
 - sustainable fishery?
 
-https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab
+#### [![:faic](external-link) more details](https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab)
 
 ---
 # Where does it come from?
@@ -425,58 +423,9 @@ text(1.4, .22, labels = "Origin 2 FALSE", col = col2, pos = 4, cex = 2)
 
 
 ---
-# Theory - dimensionality
-
-
-#### Biotracers ~ N(μ, Σ)
-
---
-
-##### μ: means - fixed
-
---
-
-##### Σ: covariance matrix
-
-- diagonal (variances) fixed
-
-- off-diagonal terms (symetric) vary:
-
-.center[![:scale 20%](img/covariance.png)]
-
-<!-- \begin{pmatrix}
-1 & \rho \\
-\rho & 1
-\end{pmatrix} -->
-
-
-
-
----
 # Theory - dimensionality (dim = 2)
 
 .center[![:scale 77%](img/FigCor1.png)]
-
----
-# Basic ideas - more dimensions
-
-```{R fig44, echo = F}
-par(mypar)
-figOneDim(col1, col2)
-```
-
-
-
----
-# Basic ideas - more dimensions
-
-```{R fig55, echo = F, fig.height = 4.8}
-par(mypar)
-par(mar = c(3, 3, 2, 2))
-figTwoDims(col1, col2)
-```
-
-##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
 
 ---
 # Theory - dimensionality (dim = 2)
@@ -528,6 +477,25 @@ figTwoDims(col1, col2)
 
 .center[![:scale 77%](img/FigCor11.png)]
 
+
+---
+# Basic ideas - more dimensions
+
+```{R fig44, echo = F}
+par(mypar)
+figOneDim(col1, col2)
+```
+
+---
+# Basic ideas - more dimensions
+
+```{R fig55, echo = F, fig.height = 4.8}
+par(mypar)
+par(mar = c(3, 3, 2, 2))
+figTwoDims(col1, col2)
+```
+
+##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
 
 
 
