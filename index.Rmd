@@ -1,19 +1,17 @@
 ---
-title: "Fighting noise with dimensionality"
+title: "Embracing the blessing of dimensionality to determine species’ provenance "
 # subtitle: ""
 author: "inSileco"
-date: "2018/02/16"
+date: "2019/12/19"
 output:
   xaringan::moon_reader:
     includes:
       in_header: inSileco-header.html
     lib_dir: assets
     seal: false
-    css: ["default", "inSileco.css", "inSileco-fonts.css"]
+    css: ["custom.css", "kunoichi"]
     nature:
       beforeInit: "inSileco-macros.js"
-      #autoplay: 30000
-      #countdown: 60000
 ---
 
 ```{r setup, echo = F}
@@ -38,65 +36,31 @@ seqx <- seq(-10, 10, .05)
 
 <!-- decktape --no-sandbox file:///home/kevcaz/Github/Talks/fightingNoise/index.html /home/kevcaz/Github/Talks/fightingNoise/fightingNoise_KC.pdf -->
 
-<img src = "img/logoUoG.png" style = "position:absolute; width:180px; height:100px; top:240px; right:15px;"></img>
+<br>
 
-## ![:faic](angle-double-right) Fighting noise with dimensionality
 
-##### The more biotracers the better!
+# .center[EMBRACING THE BLESSING OF DIMENSIONALITY TO DETERMINE SPECIES’ PROVENANCE]
+
+
+<br><br><br><br>
+
+### Kevin Cazelles &nbsp; .small[![:faic](twitter) [KCazelles](https://twitter.com/KCazelles)]
+
+<img src="img/map.png" style="position: absolute; bottom: -100px; right: -100px" width = 450px;></img>
+
+
+#### Emelia Myles-Gonzalez, Tyler Zemlak, Kevin S. McCann .small[[@McCannLab](https://www.mccannlab.ca/)]
 
 <br><br>
 
-#####  ![:faic](users) Kevin Cazelles &nbsp; .small[[McCannLab](https://www.mccannlab.org/)]
 
-###### Emelia Myles-Gonzalez, Tyler Zemlak, Kevin S. McCann
-
-<br>
-
-.column2[
-
-<br>
-
-###### ![:faic](globe) CSEE 2018 - University of Guelph
-###### ![:faic](github) [KevCaz/fightingNoise](https://github.com/KevCaz/fightingNoise) &nbsp;&nbsp; ![:faic](twitter) [KCazelles](https://twitter.com/KCazelles)
-
-]
-
-.column2[
- &nbsp;
-.right[ [![:scale 16%](img/inSilecoLogo.png)](https://insileco.github.io/) ]
-]
+#### ![:faic](globe) QCBS Annual symposium, Montreal
+#### ![:faic](calendar) December 18th, 2019
+#### ![:faic](github) [KevCaz/fightingNoise](https://github.com/KevCaz/fightingNoise)
 
 
 
 
-
-
-
-
-
----
-class: inverse, center, middle
-
-# Before I start
-
-## Facts that are worth mentioning
-
-
----
-
-# Facts that are worth mentioning
-
-<br>
-
-### 1. I won't talk about any trophic interaction
-
---
-
-### 2. Fish? hum, yes!
-
---
-
-### 3. I'm not trying to reinvent the wheel
 
 
 
@@ -108,12 +72,13 @@ class: inverse, center, middle
 
 # Context
 
+<hr>
+
 ## The push for provenance
 
 
 ---
 # The push for provenance
-
 <br>
 
 > Consumers are become increasingly aware of, and interested in, the origins
@@ -122,10 +87,27 @@ impacts on endangered species, toxin accumulations, incidents of illegal,
 unregulated and unreported (IUU) fishing, quality assurances and human
 rights abuses are better understood.
 
-* ![:faic](file-text) Roebuck, K. et al. (2017)
+![:faic](file-text) Roebuck, K. et al. (2017)
 [Canadian's Eating in the Dark: A Report Card of International
 Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf)
 
+
+---
+# The push for provenance
+
+.center[![:scale 52%](img/cardreport.png)]
+
+![:faic](file-text) Roebuck, K. et al. (2017)
+[Canadian's Eating in the Dark: A Report Card of International
+Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf)
+
+
+---
+# Sockeye salmon (*Oncorhynchus nerka*)
+
+.center[![:scale 90%](img/sockeye.png)]
+
+![:faic](file-text)  Crawford, S.S. & Muir, A.M. (2008). [Global introductions of salmon and trout in the genus Oncorhynchus: 1870–2007](https://www.researchgate.net/publication/225224390_Global_introductions_of_salmon_and_trout_in_the_genus_Oncorhynchus_1870-2007). Reviews in Fish Biology and Fisheries.
 
 
 
@@ -134,29 +116,35 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 
 <br>
 
-#### - We need regulations
+### 1. We need regulations
 
-##### *e.g.* Country of Origin Labelling (COOL) in USA
+#### .large[*e.g.* Country of Origin Labelling (COOL) in USA]
 
 <br>
 
 --
 
-#### - We need tools to authenticate the provenance
+### 2. We need tools to authenticate the provenance
 
-##### ![:faic](arrow-right) What this talk is about!
+#### .large[[What this talk is about!]()]
+
+
+
+
 
 
 ---
 # Biotracers
 
-#### Anything that could be informative...
+<br>
 
-- trace elements,
-- isotopes (delta),
-- genetics data,
-- gut contents,
-- etc.
+## Bio + tracer
+
+### trace elements
+### DNA
+### stable isotopes
+### gut contents
+### etc.
 
 #### ... to create spatial fingerprints
 
@@ -171,9 +159,9 @@ depends on combining chemometrics, computational analytical methods,
 and bioinformatics in processing and interpreting the data obtained through
 analytical technique.
 
-* ![:faic](file-text) Danezis, G. P., et al. (2016)
+![:faic](file-text) Danezis, G. P., et al. (2016)
 [Food authentication: state of the art and prospects](https://www.sciencedirect.com/science/article/pii/S2214799316300844).
-*Current Opinion in Food Science*]
+*Current Opinion in Food Science*
 
 
 ---
@@ -691,40 +679,36 @@ class: inverse, center, middle
 ---
 # Perspectives
 
+<br>
 
-## ![:faic](arrow-right) Theory
 
-  - Spatial autocorrelation
-  - Mixture problem
-  - Temporal variations
+## Limits
 
---
+### Spatial autocorrelation
+### Mixture problem
+### Temporal variations
 
-##  ![:faic](arrow-right) Applying the framework
-
-  - More than 2 dimensions
-  - Isoscape and more
-  - Based on real samples
 
 
 ---
-# Thanks to
+# Many thanks to
+
+<br><br>
 
 --
 
-### - my coauthors and [the McCannLab](https://www.mccannlab.org/)
+### My co-authors and [the McCann Lab](https://www.mccannlab.org/)
+
+<br><br>
 
 --
 
-### - [Food From Thought](https://arrellfoodinstitute.ca/food-from-thought/)
 
-![:scalec 34%](img/CanadaFirst.png)
+### [Food From Thought](https://arrellfoodinstitute.ca/food-from-thought/)
 
---
+![:scalec 50%](img/CanadaFirst.png)
 
-### - [Biodiversity Resilience Network](http://birn.editmy.website/)
 
-![:scalec 26%](img/BiRN_logo.png)
 
 
 ---

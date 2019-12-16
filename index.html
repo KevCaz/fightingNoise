@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
-    <title>Fighting noise with dimensionality</title>
-    <meta charset="utf-8">
+    <title>Embracing the blessing of dimensionality to determine species’ provenance</title>
+    <meta charset="utf-8" />
     <meta name="author" content="inSileco" />
-    <link href="assets/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="assets/remark-css-0.0.1/kunoichi.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/academicons-1.8.1/css/academicons.min.css">
-    <link rel="stylesheet" href="inSileco.css" type="text/css" />
-    <link rel="stylesheet" href="inSileco-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -18,65 +17,31 @@
 
 &lt;!-- decktape --no-sandbox file:///home/kevcaz/Github/Talks/fightingNoise/index.html /home/kevcaz/Github/Talks/fightingNoise/fightingNoise_KC.pdf --&gt;
 
-&lt;img src = "img/logoUoG.png" style = "position:absolute; width:180px; height:100px; top:240px; right:15px;"&gt;&lt;/img&gt;
+&lt;br&gt;
 
-## ![:faic](angle-double-right) Fighting noise with dimensionality
 
-##### The more biotracers the better!
+# .center[EMBRACING THE BLESSING OF DIMENSIONALITY TO DETERMINE SPECIES’ PROVENANCE]
+
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+### Kevin Cazelles &amp;nbsp; .small[![:faic](twitter) [KCazelles](https://twitter.com/KCazelles)]
+
+&lt;img src="img/map.png" style="position: absolute; bottom: -100px; right: -100px" width = 450px;&gt;&lt;/img&gt;
+
+
+#### Emelia Myles-Gonzalez, Tyler Zemlak, Kevin S. McCann .small[[@McCannLab](https://www.mccannlab.ca/)]
 
 &lt;br&gt;&lt;br&gt;
 
-#####  ![:faic](users) Kevin Cazelles &amp;nbsp; .small[[McCannLab](https://www.mccannlab.org/)]
 
-###### Emelia Myles-Gonzalez, Tyler Zemlak, Kevin S. McCann
-
-&lt;br&gt;
-
-.column2[
-
-&lt;br&gt;
-
-###### ![:faic](globe) CSEE 2018 - University of Guelph
-###### ![:faic](github) [KevCaz/fightingNoise](https://github.com/KevCaz/fightingNoise) &amp;nbsp;&amp;nbsp; ![:faic](twitter) [KCazelles](https://twitter.com/KCazelles)
-
-]
-
-.column2[
- &amp;nbsp;
-.right[ [![:scale 16%](img/inSilecoLogo.png)](https://insileco.github.io/) ]
-]
+#### ![:faic](globe) QCBS Annual symposium, Montreal
+#### ![:faic](calendar) December 18th, 2019
+#### ![:faic](github) [KevCaz/fightingNoise](https://github.com/KevCaz/fightingNoise)
 
 
 
 
-
-
-
-
-
----
-class: inverse, center, middle
-
-# Before I start
-
-## Facts that are worth mentioning
-
-
----
-
-# Facts that are worth mentioning
-
-&lt;br&gt;
-
-### 1. I won't talk about any trophic interaction
-
---
-
-### 2. Fish? hum, yes!
-
---
-
-### 3. I'm not trying to reinvent the wheel
 
 
 
@@ -88,12 +53,13 @@ class: inverse, center, middle
 
 # Context
 
+&lt;hr&gt;
+
 ## The push for provenance
 
 
 ---
 # The push for provenance
-
 &lt;br&gt;
 
 &gt; Consumers are become increasingly aware of, and interested in, the origins
@@ -102,10 +68,27 @@ impacts on endangered species, toxin accumulations, incidents of illegal,
 unregulated and unreported (IUU) fishing, quality assurances and human
 rights abuses are better understood.
 
-* ![:faic](file-text) Roebuck, K. et al. (2017)
+![:faic](file-text) Roebuck, K. et al. (2017)
 [Canadian's Eating in the Dark: A Report Card of International
 Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf)
 
+
+---
+# The push for provenance
+
+.center[![:scale 52%](img/cardreport.png)]
+
+![:faic](file-text) Roebuck, K. et al. (2017)
+[Canadian's Eating in the Dark: A Report Card of International
+Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017/03/Seafood-Labelling-Report-Online.pdf)
+
+
+---
+# Sockeye salmon (*Oncorhynchus nerka*)
+
+.center[![:scale 90%](img/sockeye.png)]
+
+![:faic](file-text)  Crawford, S.S. &amp; Muir, A.M. (2008). [Global introductions of salmon and trout in the genus Oncorhynchus: 1870–2007](https://www.researchgate.net/publication/225224390_Global_introductions_of_salmon_and_trout_in_the_genus_Oncorhynchus_1870-2007). Reviews in Fish Biology and Fisheries.
 
 
 
@@ -114,29 +97,35 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 
 &lt;br&gt;
 
-#### - We need regulations
+### 1. We need regulations
 
-##### *e.g.* Country of Origin Labelling (COOL) in USA
+#### .large[*e.g.* Country of Origin Labelling (COOL) in USA]
 
 &lt;br&gt;
 
 --
 
-#### - We need tools to authenticate the provenance
+### 2. We need tools to authenticate the provenance
 
-##### ![:faic](arrow-right) What this talk is about!
+#### .large[[What this talk is about!]()]
+
+
+
+
 
 
 ---
 # Biotracers
 
-#### Anything that could be informative...
+&lt;br&gt;
 
-- trace elements,
-- isotopes (delta),
-- genetics data,
-- gut contents,
-- etc.
+## Bio + tracer
+
+### trace elements
+### DNA
+### stable isotopes
+### gut contents
+### etc.
 
 #### ... to create spatial fingerprints
 
@@ -151,9 +140,9 @@ depends on combining chemometrics, computational analytical methods,
 and bioinformatics in processing and interpreting the data obtained through
 analytical technique.
 
-* ![:faic](file-text) Danezis, G. P., et al. (2016)
+![:faic](file-text) Danezis, G. P., et al. (2016)
 [Food authentication: state of the art and prospects](https://www.sciencedirect.com/science/article/pii/S2214799316300844).
-*Current Opinion in Food Science*]
+*Current Opinion in Food Science*
 
 
 ---
@@ -211,18 +200,18 @@ class: inverse, center, middle
 ---
 # Basic ideas - multiple origins
 
-&lt;img src="index_files/figure-html/figA1-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/figA1-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 # Basic ideas - multiple origins
 
-&lt;img src="index_files/figure-html/figA2-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/figA2-1.png" style="display: block; margin: auto;" /&gt;
 
 
 ---
 # Basic ideas - multiple origins
 
-&lt;img src="index_files/figure-html/fig0-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/fig0-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 # Basic ideas - multiple origins
@@ -239,7 +228,7 @@ class: inverse, center, middle
 ---
 # Basic ideas - multiple origins
 
-&lt;img src="index_files/figure-html/figA3-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/figA3-1.png" style="display: block; margin: auto;" /&gt;
 
 ### &amp;nbsp; O&lt;sub&gt;1&lt;/sub&gt; | Sample ?  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Sample | O&lt;sub&gt;i&lt;/sub&gt; known!
 
@@ -653,40 +642,36 @@ class: inverse, center, middle
 ---
 # Perspectives
 
+&lt;br&gt;
 
-## ![:faic](arrow-right) Theory
 
-  - Spatial autocorrelation
-  - Mixture problem
-  - Temporal variations
+## Limits
 
---
+### Spatial autocorrelation
+### Mixture problem
+### Temporal variations
 
-##  ![:faic](arrow-right) Applying the framework
-
-  - More than 2 dimensions
-  - Isoscape and more
-  - Based on real samples
 
 
 ---
-# Thanks to
+# Many thanks to
+
+&lt;br&gt;&lt;br&gt;
 
 --
 
-### - my coauthors and [the McCannLab](https://www.mccannlab.org/)
+### My co-authors and [the McCann Lab](https://www.mccannlab.org/)
+
+&lt;br&gt;&lt;br&gt;
 
 --
 
-### - [Food From Thought](https://arrellfoodinstitute.ca/food-from-thought/)
 
-![:scalec 34%](img/CanadaFirst.png)
+### [Food From Thought](https://arrellfoodinstitute.ca/food-from-thought/)
 
---
+![:scalec 50%](img/CanadaFirst.png)
 
-### - [Biodiversity Resilience Network](http://birn.editmy.website/)
 
-![:scalec 26%](img/BiRN_logo.png)
 
 
 ---
@@ -704,7 +689,7 @@ class: inverse, center, middle
 ---
 # ![:faic](angle-double-right) The more dissimilar the better
 
-&lt;img src="index_files/figure-html/fig1-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/fig1-1.png" style="display: block; margin: auto;" /&gt;
 
 #### .alert[![:faic](arrow-right) Tricky!]
 
@@ -712,14 +697,14 @@ class: inverse, center, middle
 ---
 # ![:faic](angle-double-right) The more dissimilar the better
 
-&lt;img src="index_files/figure-html/fig2-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/fig2-1.png" style="display: block; margin: auto;" /&gt;
 
 #### .alert[![:faic](arrow-right) Easier!]
 
 ---
 # ![:faic](angle-double-right) The more dissimilar the better
 
-&lt;img src="index_files/figure-html/fig3-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/fig3-1.png" style="display: block; margin: auto;" /&gt;
 
 #### .alert[![:faic](arrow-right) Easier!]
 
@@ -728,7 +713,7 @@ class: inverse, center, middle
 ---
 # Basic ideas - more dimensions
 
-&lt;img src="index_files/figure-html/fig4-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/fig4-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 # Bayesian rule
@@ -740,7 +725,7 @@ class: inverse, center, middle
 ---
 # Basic ideas - more dimensions
 
-&lt;img src="index_files/figure-html/fig5-1.png" width="768" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/fig5-1.png" style="display: block; margin: auto;" /&gt;
 
 ##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
 
@@ -761,22 +746,64 @@ class: inverse, center, middle
 - [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
 - sustainable fishery?
     </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="inSileco-macros.js"></script>
 <script>var slideshow = remark.create();
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
 })();</script>
 
 <script>
 (function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -790,14 +817,15 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     i++;
   }
-})();
+};
+slideshow._releaseMath(document);
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);
