@@ -105,7 +105,7 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 ---
 # Sockeye salmon (*Oncorhynchus nerka*)
 
-.center[![:scale 90%](img/sockeye.png)]
+.center[![:scale 85%](img/sockeye.png)]
 
 ![:faic](file-text)  Crawford, S.S. & Muir, A.M. (2008). [Global introductions of salmon and trout in the genus Oncorhynchus: 1870–2007](https://www.researchgate.net/publication/225224390_Global_introductions_of_salmon_and_trout_in_the_genus_Oncorhynchus_1870-2007). Reviews in Fish Biology and Fisheries.
 
@@ -134,23 +134,23 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 
 
 ---
-# Biotracers
+# Biotracers to create spatial fingerprints
 
 <br>
 
 ## Bio + tracer
 
-### trace elements
-### DNA
-### stable isotopes
-### gut contents
-### etc.
+### &nbsp; - trace elements
+### &nbsp; - stable isotopes
+### &nbsp; - fatty acids
+### &nbsp; - DNA
+### &nbsp; - gut contents
+### &nbsp; - etc.
 
-#### ... to create spatial fingerprints
 
 
 ---
-# A silver bullet?
+# Vertical vs horizontal strategies
 
 <br>
 
@@ -163,41 +163,27 @@ analytical technique.
 [Food authentication: state of the art and prospects](https://www.sciencedirect.com/science/article/pii/S2214799316300844).
 *Current Opinion in Food Science*
 
-
----
-# Questions
-
 <br>
-
-## Where does this sample come from?
-
---
-
-<br>
-
-####  ![:faic](angle-double-right ) Why should we combine multiple sources of information in this context?
-
 
 
 ---
-# Where does this this lot come from?
-
+# Why develop horizontal strategies?
 
 <br>
 
-![](img/fig_map1.png)
 
-##### 1- Bering sea &nbsp;&nbsp; 2. Barents sea &nbsp;&nbsp; 3. Okhotsk sea
-
---
-#### ![:faic](arrow-right) So... 1, 2, or 3?
+.center[![:scale 95%](img/frout.png)]
 
 
-<!-- https://www.alaskankingcrab.com/blogs/resources/blog-learn-fishing-for-king-crab -->
+![:faic](file-text) Chen, Dong, et al. (2013) [Blessing of Dimensionality: High-Dimensional Feature and Its Efficient Compression for Face Verification](https://www.cv-foundation.org/openaccess/content_cvpr_2013/html/Chen_Blessing_of_Dimensionality_2013_CVPR_paper.html). 2013 IEEE Conference on Computer Vision and Pattern Recognition.
 
 
 
+---
 
+<br><br><br><br><br><br>
+
+# [CAN WE USE MULTIPLE BIO-TRACERS TO BETTER AUTHENTIFICATE SPECIES PROVENANCE?]()
 
 
 
@@ -208,22 +194,18 @@ analytical technique.
 ---
 class: inverse, center, middle
 
-# Theory
-
-## a Bayesian framework
+# Bayesian framework
 
 
-<!--need to define what is a meningful geographic area  -->
 
 
 ---
-# Basic ideas - multiple origins
+# Where does this sample comes from
 
-```{R figA1, echo = F, fig.height = 4.5}
-par(mypar)
-figDens(seqx, means = c(-1), sds = c(1), pal = c(col1, col2), lwd = 3)
-text(-1.6, .34, labels = "Origin 1", col = col1, pos = 2, cex = 2)
-```
+
+## XXX add new map
+
+
 
 ---
 # Basic ideas - multiple origins
@@ -483,18 +465,49 @@ text(1.4, .22, labels = "Origin 2 FALSE", col = col2, pos = 4, cex = 2)
 
 
 ---
-# Theory - dimensionality (up to 10)
+# Theory - dimensionality
 
 .center[![:scale 70%](img/fig_theo3a.png)]
 
 ---
-# Theory - dimensionality (up to 10)
+# Theory - dimensionality
 
 .center[![:scale 70%](img/fig_theo3b.png)]
 
 
 ---
+# Blessing of dimensionality
+
+## XXX Image + ref
+
+
+
+---
+class: inverse, center, middle
+
+# Using the framework
+
+
+
+---
+# Data
+
+- Sockeye Salmon
+
+- 3 regions
+  -
+  -
+  -
+
+- Stable isotopes
+
+- fatty acids
+
+
+
+---
 # Results
+
 
 <br>
 
