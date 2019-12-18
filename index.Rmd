@@ -455,7 +455,7 @@ $$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$
 
 --
 
-## 3. Assuming extra bio-tracer enhance 1. or 2. (or both)
+## 3. Assuming extra bio-tracers enhance 1. or 2. (or both)
 
 --
 
@@ -561,7 +561,7 @@ class: inverse, center, middle
 
 ## [Limits]()
 
-### Unpack results about correlation stucture
+### Unpack results about correlation structure
 ### Mixture problem
 ### Temporal variations
 
@@ -572,7 +572,7 @@ class: inverse, center, middle
 ## [Future]()
 
 ### Let's think vertical
-### Can we use this to create reliable maps probabilities of origin?
+### Can we use this to create reliable maps of probabilities of origin?
 
 ![](img/fig_map2a.png)
 
