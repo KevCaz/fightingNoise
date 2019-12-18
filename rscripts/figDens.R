@@ -1,10 +1,11 @@
 ## Figure density
 figDens <- function(seqx, means, sds = rep(1, length(means)), pal = 1:length(means),
-  xlab = "Values taken by the biotracer", ylab = "Density", xlim = c(-5, 5), ylim = c(0, .5), ...) {
+  xlab = "Bio-tracer value", ylab = "Density", xlim = c(-5.1, 5.1), ylim = c(0, .4), ...) {
   plot0(xlim, ylim)
-  for (i in 1:length(means)) lines(seqx, dnorm(seqx, means[i], sds[i]), col = pal[i], ...)
-  mtext(1, text = xlab, cex = 1.48)
-  mtext(2, text = ylab, cex = 1.48)
+  box(bty = "l")
+  for (i in seq_along(means)) lines(seqx, dnorm(seqx, means[i], sds[i]), col = pal[i], ...)
+  mtext(1, text = xlab, cex = 1.8, line = 1.1)
+  mtext(2, text = ylab, cex = 1.8, line = 1.1)
 }
 
 ##Figure twoDims
@@ -23,7 +24,7 @@ figTwoDims <- function(col1, col2) {
   points(dfO1$x, dfO1$y, col = col2, pch = 19, cex = 1.5)
   points(dfO2$x, dfO2$y, col = col1, pch = 19, cex = 1.2)
   #######
-  box2(1:2)
+  box(bty ="l")
   mtext(1, text = "Biotracer 1", line = 1.2, cex = 1.4)
   mtext(2, text = "Biotracer 2", line = 1.2, cex = 1.4)
 }

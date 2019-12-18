@@ -27,10 +27,10 @@ knitr::opts_chunk$set(
   fig.align = 'center',
   width = 120
 )
-mypar <- list(fg = "#303940", bg = "transparent", mar = c(2, 2, 0, 2))
+mypar <- list(fg = "1", bg = "transparent", mar = c(3, 3, 0, 3))
 pal <- gpuPalette("insileco")
-col2 <- "#3fb3b2"
-col1 <- "#375771"
+col2 <- "#ee2485"
+col1 <- "#000000"# "#3fb3b2"
 seqx <- seq(-10, 10, .05)
 ```
 
@@ -46,7 +46,7 @@ seqx <- seq(-10, 10, .05)
 
 ### Kevin Cazelles &nbsp; .small[![:faic](twitter) [KCazelles](https://twitter.com/KCazelles)]
 
-<img src="img/map.png" style="position: absolute; bottom: -100px; right: -100px" width = 450px;></img>
+<img src="img/map.png" style="position: absolute; bottom: -200px; right: -200px" width = 600px;></img>
 
 
 #### Emelia Myles-Gonzalez, Tyler Zemlak, Kevin S. McCann .small[[@McCannLab](https://www.mccannlab.ca/)]
@@ -191,294 +191,261 @@ analytical technique.
 
 
 
+
+
 ---
 class: inverse, center, middle
 
-# Bayesian framework
+# A Bayesian framework
+
+
+---
+# Where does this sample come from?
+
+
+.center[![:scale 75%](img/map2a.png)]
+
+---
+# Where does this sample come from?
+
+.center[![:scale 75%](img/map2b.png)]
 
 
 
 
 ---
-# Where does this sample comes from
+# A Naive Bayes classifier
 
 
-## XXX add new map
+--
+
+<br>
+
+## - A priori knowledge
+
+## - Sample (observations)
+
+<br>
+
+--
+
+## - Quantity, quality, heterogeneity
+
+<br>
+
+--
+
+## - Statistical model
 
 
 
 ---
-# Basic ideas - multiple origins
+# Origins and distributions
 
-```{R figA2, echo = F, fig.height = 4.5}
+<br>
+
+```{R figA2, echo = F, fig.height = 4.8, dpi = 150}
 par(mypar)
 figDens(seqx, means = c(-1, .5), sds = c(1, 1.5), pal = c(col1, col2), lwd = 3)
 text(-1.6, .34, labels = "Origin 1", col = col1, pos = 2, cex = 2)
 text(1.4, .22, labels = "Origin 2", col = col2, pos = 4, cex = 2)
 ```
 
-
 ---
-# Basic ideas - multiple origins
+# Where does this sample come from?
 
-```{R fig0, echo = F}
-par(mypar, mfrow = c(2,1), mar = c(3, 4, 0, 1))
-figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(8), xlab = "Biotracer 1", lwd = 3)
-figDens(seqx, ylim = c(0, .8), runif(8, -2, 2), runif(8, .5, 2), pal = colorRampPalette(c(col1, "grey80"))(8), xlab = "Biotracer 2", lwd = 3)
-```
+.center[![:scale 75%](img/map2c.png)]
 
----
-# Basic ideas - multiple origins
-
-<br>
-
-### .alert[Distributions are known]
-
---
-
-### do not waste data, build relevant database!
 
 
 ---
-# Basic ideas - multiple origins
+# Problem
 
-```{R figA3, echo = F, fig.height = 4.25}
+```{R figA3, echo = F, fig.height = 4.2, dpi = 150}
 par(mypar)
 figDens(seqx, means = c(-1, .5), sds = c(1, 1.5), pal = c(col1, col2), lwd = 3, ylim = c(0, .44))
 text(-1.6, .34, labels = "Origin 1 TRUE", col = col1, pos = 2, cex = 2)
 text(1.4, .22, labels = "Origin 2 FALSE", col = col2, pos = 4, cex = 2)
 ```
 
-### &nbsp; O<sub>1</sub> | Sample ?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sample | O<sub>i</sub> known!
+--
 
-
----
-# A bayesian apporach
-
-<br>
-
-- .alert[Assumptions]:
-
-  - sample from one of the areas considered
-  - no mixture
+## O<sub>1</sub> | Sample ?
 
 --
 
-- .alert[Question] O<sub>1</sub> | S<sub>n</sub>?
+## Sample | O<sub>1</sub> &nbsp;&nbsp; & &nbsp;&nbsp; Sample | O<sub>2</sub> &nbsp;&nbsp; known!
+
+
+---
+# A bayesian approach
+
+<br><br>
+
+## [Assumptions]()
+
+### 1. sample from one of the areas considered
+### 2. no mixture
+
+
+<br>
+
+$$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$
+
+
+
+
+
+---
+# Similarity & authentication
+<br>
+
+.center[![](img/FigSd1.png)]
+
+
+---
+# Similarity & authentication
+<br>
+
+.center[![](img/FigSd2.png)]
+
+---
+# Similarity & authentication
+<br>
+
+.center[![](img/FigSd3.png)]
+
+---
+# Similarity & authentication
+<br>
+
+.center[![](img/FigSd4.png)]
+
+
+---
+# Similarity & authentication
+<br>
+
+.center[![](img/FigSd5.png)]
+
+
+---
+# Similarity & authentication
+<br>
+
+.center[![](img/FigSd6.png)]
+
+
+---
+# Similarity & authentication
+<br>
+
+.center[![](img/FigSd7.png)]
+
+
+
+
+
+
+---
+# Dimensionality & authentication
+
+<br>
+
+## [Assumption](): Bio-tracers ~ N(μ, Σ)
+
+(just as in LDA)
+
+<br>
 
 --
 
-- .alert[Method:] Bayesian inversion rule
+### μ: means - fixed
 
+### Σ: covariance matrix
 
-<!-- $$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$ -->
+#### diagonal (variances) fixed
 
-
-
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigMu1.png)]
-
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigMu2.png)]
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigMu3.png)]
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigMu4.png)]
-
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigMu5.png)]
-
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigMu6.png)]
-
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigMu7.png)]
+#### off-diagonal terms (symmetric) vary:
 
 
 
 
 ---
-# Theory - dissimilarity
-<br>
+# Dimensionality & authentication
 
-.center[![:scale 94%](img/FigSd1.png)]
+.center[![:scale 90%](img/FigCor1.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor2.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor3.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor4.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor5.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor6.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor7.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor8.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor9.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor10.png)]
+
+---
+# Dimensionality & authentication
+
+.center[![:scale 90%](img/FigCor11.png)]
 
 
 ---
-# Theory - dissimilarity
-<br>
+# Dimensionality & authentication
 
-.center[![:scale 94%](img/FigSd2.png)]
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigSd3.png)]
+.center[![:scale 80%](img/fig_theo3a.png)]
 
 ---
-# Theory - dissimilarity
-<br>
+# Dimensionality & authentication
 
-.center[![:scale 94%](img/FigSd4.png)]
-
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigSd5.png)]
-
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigSd6.png)]
-
-
----
-# Theory - dissimilarity
-<br>
-
-.center[![:scale 94%](img/FigSd7.png)]
+.center[![:scale 80%](img/fig_theo3b.png)]
 
 --
 
-## ![:faic](angle-double-right) The more dissimilar the better
+## .center[[Blessing of dimensionality!]()]
 
 
 
 
----
-# Theory - dimensionality
 
 
-#### Biotracers ~ N(μ, Σ)
-
---
-
-##### μ: means - fixed
-
---
-
-##### Σ: covariance matrix
-
-- diagonal (variances) fixed
-
-- off-diagonal terms (symetric) vary:
-
-.center[![:scale 20%](img/covariance.png)]
-
-<!-- \begin{pmatrix}
-1 & \rho \\
-\rho & 1
-\end{pmatrix} -->
-
-
-
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor1.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor2.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor3.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor4.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor5.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor6.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor7.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor8.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor9.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor10.png)]
-
----
-# Theory - dimensionality (dim = 2)
-
-.center[![:scale 77%](img/FigCor11.png)]
-
-
-
-
----
-# Theory - dimensionality
-
-.center[![:scale 70%](img/fig_theo3a.png)]
-
----
-# Theory - dimensionality
-
-.center[![:scale 70%](img/fig_theo3b.png)]
-
-
----
-# Blessing of dimensionality
-
-## XXX Image + ref
 
 
 
@@ -529,15 +496,6 @@ class: inverse, center, middle
 
 
 
-
-
-
----
-class: inverse, center, middle
-
-# Applying the framework
-
-## The King crab example
 
 ---
 # King Crab - an example
@@ -694,13 +652,19 @@ class: inverse, center, middle
 
 <br>
 
+--
 
 ## Limits
 
-### Spatial autocorrelation
 ### Mixture problem
 ### Temporal variations
 
+--
+<br>
+
+## Future
+
+### Can we use this to create reliable maps probabilities of origin?
 
 
 ---
