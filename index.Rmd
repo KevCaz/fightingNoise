@@ -353,7 +353,7 @@ $$[O_1|S_{n}] = \frac{[S_{n}|O_1][O_1]}{\sum_j [S_{n}|O_j][O_j]}$$
 
 ## [Assumption](): Bio-tracers ~ N(μ, Σ)
 
-#### just as in [LDA]()
+### just as in a [Linear Discriminant Analysis (LDA)]()
 
 <br>
 
@@ -518,13 +518,16 @@ class: inverse, center, middle
 
 <br>
 
-### - A priori knowledge 25 individuals | test on 5 individuals
+### - A priori knowledge 20 individuals | test on 10 individuals
 
 ### - All combinations of bio-tracers
 
 ### - Custom Bayes classifier / [LDA]() / Deep Learning
 
+<br>
+--
 
+### cor(RU, US) > cor(CA, US) = cor(CA, RU)
 
 ---
 # Results
