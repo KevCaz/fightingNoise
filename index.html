@@ -25,7 +25,9 @@
 
 
 
-&lt;!-- decktape --no-sandbox file:///home/kevcaz/Github/Talks/fightingNoise/index.html /home/kevcaz/Github/Talks/fightingNoise/fightingNoise_KC.pdf --&gt;
+
+
+
 
 &lt;br&gt;
 
@@ -335,7 +337,7 @@ class: inverse, center, middle
 
 ## [Assumption](): Bio-tracers ~ N(μ, Σ)
 
-(just as in LDA)
+#### just as in [LDA]()
 
 &lt;br&gt;
 
@@ -500,11 +502,172 @@ class: inverse, center, middle
 
 &lt;br&gt;
 
-### - A priori knowledge 25 individuals | test 5 individuals
+### - A priori knowledge 25 individuals | test on 5 individuals
 
 ### - All combinations of bio-tracers
 
-### - [Custom Bayes classifier]() / LDA / Deep Learning
+### - Custom Bayes classifier / [LDA]() / Deep Learning
+
+
+
+---
+# Results
+
+.center[![:scale 75%](img/res1.png)]
+
+
+---
+# Results
+
+.center[![:scale 76%](img/res2.png)]
+
+
+
+
+
+
+---
+class: inverse, center, middle
+
+# Perspectives
+
+
+---
+# Perspectives
+&lt;br&gt;
+
+## [Limits]()
+
+### Mixture problem
+### Temporal variations
+
+---
+# Perspectives
+&lt;br&gt;
+
+## [Future]()
+
+### Let's think vertical
+### Can we use this to create reliable maps probabilities of origin?
+
+![](img/fig_map2a.png)
+
+- ![:faic](file-text) Magozzi, S., et al. (2017) [Using ocean models to predict spatial and temporal variation in marine carbon isotopes.](https://data.giss.nasa.gov/o18data/grid.html) *Ecosphere*
+
+
+
+---
+# Many thanks to
+
+&lt;br&gt;&lt;br&gt;
+
+--
+
+### My co-authors and [the McCann Lab](https://www.mccannlab.org/)
+
+&lt;br&gt;&lt;br&gt;
+
+--
+
+
+### [Food From Thought](https://arrellfoodinstitute.ca/food-from-thought/)
+
+![:scalec 50%](img/CanadaFirst.png)
+
+
+---
+class: inverse, center, middle
+
+# THE END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+# Spatial correlation
+
+# ![](img/fig_theo4.png)
+
+
+---
+# ![:faic](angle-double-right) The more dissimilar the better
+
+&lt;img src="index_files/figure-html/fig1-1.png" style="display: block; margin: auto;" /&gt;
+
+#### .alert[![:faic](arrow-right) Tricky!]
+
+
+---
+# ![:faic](angle-double-right) The more dissimilar the better
+
+&lt;img src="index_files/figure-html/fig2-1.png" style="display: block; margin: auto;" /&gt;
+
+#### .alert[![:faic](arrow-right) Easier!]
+
+---
+# ![:faic](angle-double-right) The more dissimilar the better
+
+&lt;img src="index_files/figure-html/fig3-1.png" style="display: block; margin: auto;" /&gt;
+
+#### .alert[![:faic](arrow-right) Easier!]
+
+
+
+---
+# Basic ideas - more dimensions
+
+&lt;img src="index_files/figure-html/fig4-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+# Bayesian rule
+
+![:scalec 40%](img/Bayes.png)
+
+
+
+---
+# Basic ideas - more dimensions
+
+&lt;img src="index_files/figure-html/fig5-1.png" style="display: block; margin: auto;" /&gt;
+
+##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
+
+
+
+---
+# Study case - King Crab
+
+#### Has it been caught illegaly?
+
+&gt; [For decades, Alaska crabbers have competed against king crab illegally caught by Russian fleets.](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
+
+- illegal area / unauthorized fleets
+- illegal, unreported and unregulated (IUU) fishing has tremendous economical consequences
+
+#### Where does this lot of King crab come from?
+
+- [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
+- sustainable fishery?
 
 
 
@@ -641,136 +804,12 @@ class: inverse, center, middle
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ---
-class: inverse, center, middle
-
-# Perspectives
-
-
----
-# Perspectives
+# King Crab - an example
 
 &lt;br&gt;
 
---
-
-## Limits
-
-### Mixture problem
-### Temporal variations
-
---
-&lt;br&gt;
-
-## Future
-
-### Let's think vertical
-### Can we use this to create reliable maps probabilities of origin?
-
-
----
-# Many thanks to
-
-&lt;br&gt;&lt;br&gt;
-
---
-
-### My co-authors and [the McCann Lab](https://www.mccannlab.org/)
-
-&lt;br&gt;&lt;br&gt;
-
---
-
-
-### [Food From Thought](https://arrellfoodinstitute.ca/food-from-thought/)
-
-![:scalec 50%](img/CanadaFirst.png)
-
-
-
-
----
-class: inverse, center, middle
-
-# THE END
-
-
----
-# Spatial correlation
-
-# ![](img/fig_theo4.png)
-
-
----
-# ![:faic](angle-double-right) The more dissimilar the better
-
-&lt;img src="index_files/figure-html/fig1-1.png" style="display: block; margin: auto;" /&gt;
-
-#### .alert[![:faic](arrow-right) Tricky!]
-
-
----
-# ![:faic](angle-double-right) The more dissimilar the better
-
-&lt;img src="index_files/figure-html/fig2-1.png" style="display: block; margin: auto;" /&gt;
-
-#### .alert[![:faic](arrow-right) Easier!]
-
----
-# ![:faic](angle-double-right) The more dissimilar the better
-
-&lt;img src="index_files/figure-html/fig3-1.png" style="display: block; margin: auto;" /&gt;
-
-#### .alert[![:faic](arrow-right) Easier!]
-
-
-
----
-# Basic ideas - more dimensions
-
-&lt;img src="index_files/figure-html/fig4-1.png" style="display: block; margin: auto;" /&gt;
-
----
-# Bayesian rule
-
-![:scalec 40%](img/Bayes.png)
-
-
-
----
-# Basic ideas - more dimensions
-
-&lt;img src="index_files/figure-html/fig5-1.png" style="display: block; margin: auto;" /&gt;
-
-##### ![:faic](angle-double-right) Dimensionality ![:faic](arrow-up) then relative overlap ![:faic](arrow-down)
-
-
-
----
-# Study case - King Crab
-
-#### Has it been caught illegaly?
-
-&gt; [For decades, Alaska crabbers have competed against king crab illegally caught by Russian fleets.](https://thefishsite.com/articles/alaska-fish-factor-king-crab-fishers-welcome-crack-down-on-illegal-fishing)
-
-- illegal area / unauthorized fleets
-- illegal, unreported and unregulated (IUU) fishing has tremendous economical consequences
-
-#### Where does this lot of King crab come from?
-
-- [consumer right-to-know](http://thehill.com/blogs/congress-blog/education/214268-consumers-have-a-right-to-know-where-their-food-comes-from)
-- sustainable fishery?
+![](img/fig_map1.png)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
