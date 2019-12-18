@@ -100,3 +100,15 @@ th, td { padding: 5px; }
 .remark-slide-number {
     opacity: 0 !important;
 }
+
+
+.column:first-of-type {
+  float:left;
+  width: 50%;
+  padding: .1em .5em .1em .1em
+}
+.column:last-of-type {
+  float:right;
+  width: 50%;
+  padding:  .1em .1em .1em .5em
+}
