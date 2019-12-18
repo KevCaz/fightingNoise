@@ -79,26 +79,6 @@ class: inverse, center, middle
 ## The push for provenance
 
 ---
-# Where does it come from?
-
---
-
-## it = seafood
-
---
-
-## Why does it matter?
-
---
-
-### - health
-
-### - sustainability
-
-### - economical reasons
-
-
----
 # The push for provenance
 <br>
 
@@ -151,10 +131,6 @@ Seafood Labelling Requirements](http://www.seachoice.org/wp-content/uploads/2017
 
 
 
-
-
-##### ![:faic](arrow-right) We combine biotracers to do so
-
 ---
 # Biotracers to create spatial fingerprints
 
@@ -199,14 +175,6 @@ analytical technique.
 
 ![:faic](file-text) Chen, Dong, et al. (2013) [Blessing of Dimensionality: High-Dimensional Feature and Its Efficient Compression for Face Verification](https://www.cv-foundation.org/openaccess/content_cvpr_2013/html/Chen_Blessing_of_Dimensionality_2013_CVPR_paper.html). 2013 IEEE Conference on Computer Vision and Pattern Recognition.
 
-
----
-
-# So... the 1, 2, or 3?
-
-![:scalec 80%](img/drunkenKC.png)
-
-* ![:faic](file-text) [Drunken Alaska King Crab Legs](https://iowagirleats.com/2013/12/11/drunken-alaska-king-crab-legs-hy-vee-cooking-video/)
 
 ---
 
