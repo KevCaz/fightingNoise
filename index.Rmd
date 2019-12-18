@@ -530,15 +530,19 @@ class: inverse, center, middle
 ### cor(RU, US) > cor(CA, US) = cor(CA, RU)
 
 ---
-# Results
+# Results - increasing sample size
 
-.center[![:scale 75%](img/res1.png)]
+### 3 bio-tracers
+
+.center[![:scale 73%](img/res1.png)]
 
 
 ---
-# Results
+# Results - increasing dimensionality
 
-.center[![:scale 76%](img/res2.png)]
+### sample size = 1
+
+.center[![:scale 74%](img/res2.png)]
 
 
 
@@ -557,6 +561,7 @@ class: inverse, center, middle
 
 ## [Limits]()
 
+### Unpack results about correlation stucture
 ### Mixture problem
 ### Temporal variations
 
